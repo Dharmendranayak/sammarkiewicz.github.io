@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: transparent url('http://sammarkiewi.cz/blog/images/bg-rice2.jpg') 0 0 repeat;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.71429em;
+}
+
+header, nav, article {
+  width:100%;
+  max-width:720px;
+  padding:0 10px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0;
+}
+
+header h1, .title_h1 {
+  background: transparent url('http://sammarkiewi.cz/blog/images/bg-rice2.jpg') 0 0 repeat;
+  display: block;
+  text-indent: -999em;
+  width: 113px;
+  height: 112px;
+}
+
+[role="main"] {
+  margin: 1.5em auto 0;
+  border-top: 1px dotted #fcb20e;
+  padding:.75em 0 0
+}
+
+.text {
+  float:right;
+  display:inline-block;
+  width:500px
+}
+
+[role="complementary"] {
+  width: 200px;
+  margin:7.55em 20px 0 0;
+  padding: 1.25em 0 0;
+  border-top: 1px solid #ddd;
+  float:left;
+  display:inline-block;
+}
+
+h2 {
+  font-family: "ledgerregular";
+  font-size: 2.25em;
+  margin:0 0 1em;
+  line-height: 1.2em;
+  color:#fcb20e
+}
+
+h2 a {
+  text-decoration: none;
+  color:#fcb20e;
+}
+
+p {
+  font-family: "source_sans_proregular";
+  margin: 0 0 1.5em;
+  font-size: 1.25em;
+  line-height:1.5em;
+  color:#888;
+}
+
+.shortlink {
+  font-size:.9em;
+}
+
+.time {
+  font-family: "ledgerregular";
+  font-size: 1.1em;
+  margin-bottom:.55em;
+  color:#fcb20e
+}
+
+
+/* FONTS */
+
+@font-face {
+  font-family: "ledgerregular";
+  src: url('http://sammarkiewi.cz/blog/fonts/ledger-regular-webfont.ttf') format('truetype'), url('/fonts/ledger-regular-webfont.otf') format('opentype'); }
+
+@font-face {
+  font-family: "source_sans_probold";
+  src: url('http://sammarkiewi.cz/blog/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'), url('/fonts/sourcesanspro-bold-webfont.otf') format('opentype'); }
+
+@font-face {
+  font-family: "source_sans_pro_extralightRg";
+  src: url('http://sammarkiewi.cz/blog/fonts/sourcesanspro-extralight-webfont.ttf') format('truetype'), url('/fonts/sourcesanspro-extralight-webfont.otf') format('opentype'); }
+
+@font-face {
+  font-family: "source_sans_pro_lightregular";
+  src: url('http://sammarkiewi.cz/blog/fonts/sourcesanspro-light-webfont.ttf') format('truetype'), url('/fonts/sourcesanspro-light-webfont.otf') format('opentype'); }
+
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url('http://sammarkiewi.cz/blog/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'), url('/fonts/sourcesanspro-regular-webfont.otf') format('opentype'); }
+
+
+
