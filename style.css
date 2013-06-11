@@ -1,0 +1,169 @@
+
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot');
+  src: url('fonts/fontello.eot#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff') format('woff'),
+       url('fonts/fontello.ttf') format('truetype'),
+       url('fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-skype:before { content: '\e803'; } /* '' */
+.icon-linkedin:before { content: '\e805'; } /* '' */
+.icon-github:before { content: '\e801'; } /* '' */
+.icon-dribbble:before { content: '\e802'; } /* '' */
+.icon-behance:before { content: '\e800'; } /* '' */
+.icon-paper-plane:before { content: '\e806'; } /* '' */
+body {font-size: .85em;}
+header {position: fixed; background: #fff; color: #fff; height: 90px; width: 100%; z-index: 100}
+header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; position: absolute; top: 0px; left: 10px; background: transparent url('images/logo.png') center center no-repeat;}
+
+.step-1 a {background: white}
+.step-2 a {background: #3da3a2}
+.step-3 a {background: #eb713b}
+.step-4 a {background: #f2b636}
+
+section {height: 1000px; width: 100%; z-index: 7; }
+#skrollr-body, #m-box--front-end-elements, #m-box--webdesigner-elements, #m-box--about-elements {position: fixed; width: 1000px; left: 50%; margin-left: -500px;  top: 0; height: 1000px;overflow: hidden;}
+#body {max-width: 1000px; position: relative; margin: 0 auto;  height: 1000px; display: block; z-index: 8;}
+article {max-width: 1000px; margin: 0 auto;  height: 1000px; display: block; }
+article p {position: relative; z-index: 20}
+article, .tips {font-family: 'Lato', sans-serif; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.list-intro{font-family: 'Lato', sans-serif; font-size: .9em;}
+strong {font-weight: 700;}
+#body {background: transparent url('images/nude.png') center 40% no-repeat; position: fixed;width: 1000px; left: 50%; margin-left: -500px;}
+#body.bonus {background: transparent url('images/nude-bonus.png') center 40% no-repeat;}
+#m-box--front-end {background-color: #3da3a2; }
+#m-box--about {background: #f2b636 url('images/bg-contact.gif') top center fixed no-repeat }
+#m-box--front-end p, #m-box--presentation p, #m-box--webdesigner p, #m-box--about p {color: white; padding: 0 0 .7em 1.5em; font-size: 1.2em; font-weight: 300; line-height: 1.6em; width: 275px; }
+#m-box--presentation article {padding-left: 50em;}
+#m-box--about article {padding-left: 50em;}
+#m-box--front-end p, #m-box--front-end a {color: #9ad7d6;}
+#m-box--webdesigner p, #m-box--webdesigner a{color: #fae2be;}
+#m-box--about p, #m-box--about a {color: #f8f1e1;}
+#m-box--presentation p {
+  color: #8a8a8a; padding: 0 1em 1.5em 1em;
+}
+#m-box--front-end p:first-child, #m-box--presentation p:first-child, #m-box--webdesigner p:first-child, #m-box--about p:first-child {
+  border-left: 3px solid white;
+  padding-top: 240px;
+  font-size: 2.7em;
+  line-height: 1.3em;
+  margin: 0 0 1em;
+  padding: 180px 0 .5em .6em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+#m-box--presentation p:first-child {
+  color: #8a8a8a;
+  border-left: 0 none;
+  font-size: 3.5em;
+  margin-bottom: .2em;
+  padding-left: .3em
+}
+
+#m-box--webdesigner {background-color: #eb713b; }
+#m-box--front-end ul {float: right; margin: 405px 50px 0 0;}
+#m-box--front-end-elements .list-intro {color: #0e6261;}
+#m-box--webdesigner-elements .list-intro {color: #3da3a2}
+
+@-webkit-keyframes shaker {
+  0% {
+    -webkit-transform:rotate(2deg);
+  }
+  100% {
+    -webkit-transform:rotate(-2deg);
+  }
+}
+
+@-moz-keyframes shaker {
+  0% {
+    -moz-transform:rotate(2deg);
+  }
+  100% {
+    -moz-transform:rotate(-2deg);
+  }
+}
+
+.dialog {position: absolute; top: 110px; left: 210px; width: 208px; height: 72px; z-index: 12; background: transparent url('images/dialog.png') 0 0 no-repeat; padding: 20px 10px 10px; font-family: 'Lato', sans-serif;
+}
+
+.m-list-accessories li{display: block; position: absolute;}
+.elements { display: block; position: absolute;}
+.elements a {width: 100%; height: 100%; display: block; text-indent: -999em}
+.clothes {z-index: 11;}
+.censor {width:181px;  height: 81px; background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11;}
+.tshirt {width:151px;  height: 259px; background: transparent url('images/shirt-git.png') 0 0 no-repeat; z-index: 9;}
+.tshirt:hover, .headphones:hover, .blog:hover, .basket-top:hover, .twitter:hover, .poster:hover, .shirt:hover {
+  cursor: pointer;
+  -moz-animation-name: shaker;
+  -moz-animation-duration: .1s;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-name: shaker;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-iteration-count: 3;
+}
+.jean {width:105px;  height: 321px; background: transparent url('images/jean.png') 0 0 no-repeat; z-index: 10;}
+.shoes {width: 115px; height: 47px; background: transparent url('images/converse.png') 0 0 no-repeat; z-index: 9;}
+.icon {text-indent: -999em; display: block;}
+.computer {width: 128px; height: 175px; background: transparent url('images/laptop.gif') 0 0 no-repeat; z-index: 9; }
+.tablet {width: 117px; height: 86px; background: transparent url('images/mobile.gif') 0 0 no-repeat; z-index: 9;}
+.tea {width: 69px; height: 91px; background: transparent url('images/tea.gif') 0 0 no-repeat; z-index: 9;}
+.headphones {width: 79px; height: 73px; background: transparent url('images/headphones.gif') 0 0 no-repeat; z-index: 9;}
+.basket-top {width: 112px; height: 246px; background: transparent url('images/basket-top.png') 0 0 no-repeat; z-index: 9;}
+.basket-bottom {width: 116px; height: 135px; background: transparent url('images/short.png') 0 0 no-repeat; z-index: 9;}
+.shoes-up {width: 115px; height: 100px; background: transparent url('images/converse-high.png') 0 0 no-repeat; z-index: 10;}
+.macbook {width: 252px; height: 199px; background: transparent url('images/macbook.gif') 0 0 no-repeat; z-index: 9;}
+.blog {width: 139px; height: 90px; background: transparent url('images/blog.gif') 0 0 no-repeat; z-index: 9;}
+.poster {width: 138px; height: 196px; background: transparent url('images/poster.png') 0 0 no-repeat; z-index: 9;}
+.twitter {width: 300px; height: 84px; background: transparent url('images/twitter.gif') 0 0 no-repeat; z-index: 7;}
+.sponge {width: 43px; height: 8px; background: transparent url('images/sponge.png') 0 0 no-repeat; z-index: 9;}
+.shirt {width: 155px; height: 247px; background: transparent url('images/shirt.png') 0 0 no-repeat; z-index: 9;}
+
+.trousers {width: 108px; height: 294px; background: transparent url('images/trousers.png') 0 0 no-repeat; z-index: 10; }
+.shoes-about {width: 115px; height: 48px; background: transparent url('images/converse-about.png') 0 0 no-repeat; z-index: 9;}
+.lettering {width: 200px; height: 150px; background: transparent url('images/lettering.gif') 0 0 no-repeat; z-index: 9;}
+
+footer {background: #222; position: relative; z-index: 12; color: white;font-family: 'Lato'; font-weight: 300; text-align: center; padding: 2.5em 0 2.5em; overflow: hidden}
+footer ul, nav ul, .opt-nav-mobile {text-align: center; margin: 1em 0 0;}
+footer li, nav li, .opt-nav li, .opt-nav-mobile li {display: inline-block; margin: 0 .5em; font-size: 1.1em; line-height: 1}
+footer a {color: white;}
+nav li a {color: #444;}
+.opt-nav {border-top: 1px solid white; margin: 2em 0 0; padding: 1.5em 0 0; overflow: hidden;  text-align: center; }
+.opt-nav-mobile {border-top: 1px solid #ccc;margin: 2em 0 0; padding: 1.5em 0 0; font-size: 1.5em; }
+.opt-nav li, .opt-nav-mobile li {margin: 0 .15em;}
+.opt-nav a, .opt-nav-mobile a {color: #ddd;}
+nav li {margin: 0 .25em 0 0;}
+nav a {width: 15px; height: 15px; border-radius: 50%; display: block; border: 3px solid #efefef; text-indent:-999em;}
+nav ul {position: absolute; text-align: center; top: 15px; right: 15px}
+#show-tips a{text-indent: 0; text-align: center; font-family: 'Lato', sans-serif;  text-decoration: none; font-weight: 700; border: 3px solid white; line-height: 1.3em;}
+footer span, .opt-nav span, .opt-nav-mobile span {display: block; text-indent: -999em}
+
+.tips {display: none; background: rgba(0, 0, 0, .8); color: white; padding: 10% 30%;  position: fixed; top: 0; left: 0;  z-index: 101; width: 100%; height: 100%; font-size: 1.5em; line-height: 1.9em; font-weight: 300;}
+.tips p {margin: 0 0 1em;}
+#close {color: white; position: absolute; top: 10px; right: 10px; font-weight: 700; text-decoration: none}
+#m-box--mobile {display: none;}
+@media only screen and (max-width: 568px) {
+  header, footer, #skrollr-body, #body, #m-box--front-end, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none;}
+  #m-box--mobile {position: relative; display: block; z-index: 1000; width: 90%; padding: 230px 5% 0; color: #444; background: transparent url('images/logo-mobile.png') top center no-repeat; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.6em; font-weight: 300;}
+}
