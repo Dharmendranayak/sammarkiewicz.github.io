@@ -1,4 +1,3 @@
-
 body {font-size: .85em;}
 header {position: fixed; background: #fff; color: #fff; height: 90px; width: 100%; z-index: 100}
 header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; position: absolute; top: 0px; left: 10px; background: transparent url('images/logo.png') center center no-repeat;}
@@ -10,8 +9,8 @@ header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; posit
 
 section {height: 1000px; width: 100%; z-index: 7; }
 #skrollr-body, #m-box--front-end-elements, #m-box--webdesigner-elements, #m-box--about-elements {position: fixed; width: 1000px; left: 50%; margin-left: -500px;  top: 0; height: 1000px;overflow: hidden;}
-#body {max-width: 1000px; position: relative; margin: 0 auto;  height: 1000px; display: block; z-index: 1;}
-article {max-width: 1000px; margin: 0 auto;  height: 1000px; display: block; }
+#body {max-width: 1000px; margin: 0 auto;  height: 1000px; display: block; z-index: 1;}
+article {max-width: 1000px; margin: 0 auto; height: 1000px; display: block; }
 article p {position: relative; z-index: 20}
 article, .tips {font-family: 'Lato', sans-serif; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .list-intro{font-family: 'Lato', sans-serif; font-size: .9em;}
