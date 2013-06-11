@@ -1,37 +1,4 @@
 
-@font-face {
-  font-family: 'fontello';
-  src: url('fonts/fontello.eot');
-  src: url('fonts/fontello.eot#iefix') format('embedded-opentype'),
-       url('fonts/fontello.woff') format('woff'),
-       url('fonts/fontello.ttf') format('truetype'),
-       url('fonts/fontello.svg#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: .2em;
-}
-
-.icon-twitter:before { content: '\e804'; } /* '' */
-.icon-skype:before { content: '\e803'; } /* '' */
-.icon-linkedin:before { content: '\e805'; } /* '' */
-.icon-github:before { content: '\e801'; } /* '' */
-.icon-dribbble:before { content: '\e802'; } /* '' */
-.icon-behance:before { content: '\e800'; } /* '' */
-.icon-paper-plane:before { content: '\e806'; } /* '' */
 body {font-size: .85em;}
 header {position: fixed; background: #fff; color: #fff; height: 90px; width: 100%; z-index: 100}
 header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; position: absolute; top: 0px; left: 10px; background: transparent url('images/logo.png') center center no-repeat;}
@@ -43,7 +10,7 @@ header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; posit
 
 section {height: 1000px; width: 100%; z-index: 7; }
 #skrollr-body, #m-box--front-end-elements, #m-box--webdesigner-elements, #m-box--about-elements {position: fixed; width: 1000px; left: 50%; margin-left: -500px;  top: 0; height: 1000px;overflow: hidden;}
-#body {max-width: 1000px; position: relative; margin: 0 auto;  height: 1000px; display: block; z-index: 8;}
+#body {max-width: 1000px; position: relative; margin: 0 auto;  height: 1000px; display: block; z-index: 1;}
 article {max-width: 1000px; margin: 0 auto;  height: 1000px; display: block; }
 article p {position: relative; z-index: 20}
 article, .tips {font-family: 'Lato', sans-serif; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
