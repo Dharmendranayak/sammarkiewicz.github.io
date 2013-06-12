@@ -10,15 +10,15 @@ header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; posit
 
 section {height: 1000px; width: 100%; z-index: 7; }
 #skrollr-body, #m-box--front-end-elements, #m-box--webdesigner-elements, #m-box--about-elements {position: fixed; width: 1000px; left: 50%; margin-left: -500px;  top: 0; height: 1000px;overflow: hidden;}
-#skrollr-body {z-index: 9;}
+#skrollr-body {background: transparent url('images/nude.png') center 40% no-repeat;}
 #body {max-width: 1000px; margin: 0 auto;  height: 1000px; display: block; z-index: 1;}
 article {max-width: 1000px; margin: 0 auto; height: 1000px; display: block; }
 article p {position: relative; z-index: 20}
 article, .tips {font-family: 'Lato', sans-serif; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .list-intro{font-family: 'Lato', sans-serif; font-size: .9em;}
 strong {font-weight: 700;}
-#body {background: transparent url('images/nude.png') center 40% no-repeat; position: fixed;width: 1000px; left: 50%; margin-left: -500px;}
-#body.bonus {background: transparent url('images/nude-bonus.png') center 40% no-repeat;}
+/*#body {background: transparent url('images/nude.png') center 40% no-repeat; position: fixed;width: 1000px; left: 50%; margin-left: -500px;}*/
+#skrollr-body.bonus {background: transparent url('images/nude-bonus.png') center 40% no-repeat;}
 #m-box--front-end {background-color: #3da3a2; }
 #m-box--about {background: #f2b636 url('images/bg-contact.gif') top center fixed no-repeat }
 #m-box--front-end p, #m-box--presentation p, #m-box--webdesigner p, #m-box--about p {color: white; padding: 0 0 .7em 1.5em; font-size: 1.2em; font-weight: 300; line-height: 1.6em; width: 275px; }
