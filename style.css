@@ -72,7 +72,7 @@ strong {font-weight: 700;}
   }
 }
 
-.dialog {position: absolute; top: 110px; left: 210px; width: 208px; height: 72px; z-index: 12; background: transparent url('images/dialog.png') 0 0 no-repeat; padding: 20px 10px 10px; font-family: 'Lato', sans-serif;
+.dialog {position: absolute; top: 110px; left: 210px; width: 208px; height: 72px; z-index: 22; background: transparent url('images/dialog.png') 0 0 no-repeat; padding: 20px 10px 10px; font-family: 'Lato', sans-serif;
 }
 
 .m-list-accessories li{display: block; position: absolute;}
@@ -128,9 +128,9 @@ footer span, .opt-nav span, .opt-nav-mobile span {display: block; text-indent: -
 
 .tips {display: none; background: rgba(0, 0, 0, .8); color: white; padding: 10% 30%;  position: fixed; top: 0; left: 0;  z-index: 101; width: 100%; height: 100%; font-size: 1.5em; line-height: 1.9em; font-weight: 300;}
 .tips p {margin: 0 0 1em;}
-#close {color: white; position: absolute; top: 10px; right: 10px; font-weight: 700; text-decoration: none}
+#close {color: white; position: absolute; z-index: 5; top: 10px; right: 10px; font-weight: 700; text-decoration: none}
 #m-box--mobile {display: none;}
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 1000px) {
   header, footer, #skrollr-body, #body, #m-box--front-end, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none;}
   #m-box--mobile {position: relative; display: block; z-index: 1000; width: 90%; padding: 230px 5% 0; color: #444; background: transparent url('images/logo-mobile.png') top center no-repeat; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.6em; font-weight: 300;}
 }
