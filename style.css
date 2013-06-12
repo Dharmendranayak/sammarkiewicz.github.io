@@ -1,3 +1,36 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot');
+  src: url('fonts/fontello.eot#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff') format('woff'),
+       url('fonts/fontello.ttf') format('truetype'),
+       url('fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-skype:before { content: '\e803'; } /* '' */
+.icon-linkedin:before { content: '\e805'; } /* '' */
+.icon-github:before { content: '\e801'; } /* '' */
+.icon-dribbble:before { content: '\e802'; } /* '' */
+.icon-behance:before { content: '\e800'; } /* '' */
+.icon-paper-plane:before { content: '\e806'; } /* '' */
 body {font-size: .85em;}
 header {position: fixed; background: #fff; color: #fff; height: 90px; width: 100%; z-index: 100}
 header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; position: absolute; top: 0px; left: 10px; background: transparent url('images/logo.png') center center no-repeat;}
@@ -79,7 +112,7 @@ strong {font-weight: 700;}
 .elements { display: block; position: absolute;}
 .elements a {width: 100%; height: 100%; display: block; text-indent: -999em}
 .clothes {z-index: 11;}
-.censor {width:181px;  height: 81px; background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11;}
+.censor {width:181px;  height: 81px; z-index: 22 !important;background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11;}
 .tshirt {width:151px;  height: 259px; background: transparent url('images/shirt-git.png') 0 0 no-repeat; z-index: 9;}
 .tshirt:hover, .headphones:hover, .blog:hover, .basket-top:hover, .twitter:hover, .poster:hover, .shirt:hover {
   cursor: pointer;
