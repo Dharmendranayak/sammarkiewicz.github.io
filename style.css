@@ -112,7 +112,7 @@ strong {font-weight: 700;}
 .elements { display: block; position: absolute;}
 .elements a {width: 100%; height: 100%; display: block; text-indent: -999em}
 .clothes {z-index: 11;}
-.censor {width:181px;  height: 81px; z-index: 22 !important;background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11;}
+.censor {width:181px;  height: 81px; z-index: 22 !important;background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11; position: fixed;}
 .tshirt {width:151px;  height: 259px; background: transparent url('images/shirt-git.png') 0 0 no-repeat; z-index: 9;}
 .tshirt:hover, .headphones:hover, .blog:hover, .basket-top:hover, .twitter:hover, .poster:hover, .shirt:hover {
   cursor: pointer;
@@ -163,7 +163,7 @@ footer span, .opt-nav span, .opt-nav-mobile span {display: block; text-indent: -
 .tips p {margin: 0 0 1em;}
 #close {color: white; position: absolute; z-index: 5; top: 10px; right: 10px; font-weight: 700; text-decoration: none}
 #m-box--mobile {display: none;}
-@media only screen and (max-width: 1000px) {
-  header, footer, #skrollr-body, #body, #m-box--front-end, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none;}
-  #m-box--mobile {position: relative; display: block; z-index: 1000; width: 90%; padding: 230px 5% 0; color: #444; background: transparent url('images/logo-mobile.png') top center no-repeat; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.6em; font-weight: 300;}
+@media only screen and (max-width: 1000px) and (min-height: 1000px){
+  header, footer, #skrollr-body, #body, .tips, #m-box--front-end, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none !important;}
+  #m-box--mobile {position: relative; display: block; z-index: 1000; width: 90%; text-align: center; padding: 230px 5% 0; color: #444; background: transparent url('images/logo-mobile.png') top center no-repeat; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.6em; font-weight: 300;}
 }
