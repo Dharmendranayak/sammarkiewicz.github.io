@@ -112,7 +112,7 @@ strong {font-weight: 700;}
 .elements { display: block; position: absolute;}
 .elements a {width: 100%; height: 100%; display: block; text-indent: -999em}
 .clothes {z-index: 11;}
-.censor {width:181px;  height: 81px; z-index: 22 !important;background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11; position: fixed;}
+.censor {width:182px;  height: 81px; margin-left: -91px; z-index: 22 !important;background: transparent url('images/xxx.png') 0 0 no-repeat; z-index: 11; position: fixed;}
 .tshirt {width:151px;  height: 259px; background: transparent url('images/shirt-git.png') 0 0 no-repeat; z-index: 9;}
 .tshirt:hover, .headphones:hover, .blog:hover, .basket-top:hover, .twitter:hover, .poster:hover, .shirt:hover {
   cursor: pointer;
