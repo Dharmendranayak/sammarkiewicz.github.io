@@ -164,6 +164,20 @@ footer span, .opt-nav span, .opt-nav-mobile span {display: block; text-indent: -
 #close {color: white; position: absolute; z-index: 5; top: 10px; right: 10px; font-weight: 700; text-decoration: none}
 #m-box--mobile {display: none;}
 @media only screen and (max-width: 1000px), (min-height: 999px){
-  header, footer, #skrollr-body, #body, .tips, #m-box--front-end, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none !important;}
-  #m-box--mobile {position: relative; display: block; z-index: 1000; width: 90%; text-align: center; padding: 230px 5% 0; color: #444; background: transparent url('images/logo-mobile.png') top center no-repeat; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.6em; font-weight: 300;}
+  header, footer, .elements, #skrollr-body, #body, .tips, #m-box--front-end, #m-box--front-end-elements, #m-box--webdesigner-elements, .m-box--container, .m-box #m-box--about-elements, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none !important; height: auto !important}
+  section#m-box--mobile {
+    position: relative; 
+    display: block; 
+    z-index: 1000; 
+    width: 90%; 
+    text-align: center; 
+    padding: 230px 5% 0; 
+    color: #444; 
+    background: transparent url('images/logo-mobile.png') top center no-repeat; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.2em; 
+    height: auto;
+    line-height: 1.6em; 
+    font-weight: 300;
+  }
 }

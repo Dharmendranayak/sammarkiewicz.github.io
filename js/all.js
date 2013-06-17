@@ -37,6 +37,6 @@ $(document).konami({
   code: ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'],
   callback: function() {
     $('.clothes').hide();
-    $('#body').addClass('bonus')
+    $('#skrollr-body').addClass('bonus')
   }
 });
