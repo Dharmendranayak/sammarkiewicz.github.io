@@ -180,7 +180,7 @@ display:block;
 background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
 }
 
-@media only screen and (max-width: 1000px), (min-height: 999px){
+@media only screen and (max-width: 1000px) {
   header, footer, .elements, #skrollr-body, #body, .tips, #m-box--front-end, #m-box--front-end-elements, #m-box--webdesigner-elements, .m-box--container, .m-box #m-box--about-elements, #m-box--webdesigner, #m-box--about, #m-box--presentation {display: none !important; height: auto !important}
   section#m-box--mobile {
     position: relative; 
