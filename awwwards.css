@@ -1,4 +1,4 @@
-/* --- Awwwards images --- */
+/* --- Awwwards Ribbons --- */
 
 /* Base */
 
@@ -35,28 +35,28 @@
 /* Black */
 
 #awwwards.left.black a {
-	background-image:url('images/awwwards_nominee_black_left.png');
+	background-image:url('ribbons/awwwards_honorable_black_left.png');
 }
 #awwwards.right.black a {
-	background-image:url('images/awwwards_nominee_black_right.png');
+	background-image:url('ribbons/awwwards_honorable_black_right.png');
 }
 
 /* White */
 
 #awwwards.left.white a {
-	background-image:url('images/awwwards_nominee_white_left.png');
+	background-image:url('ribbons/awwwards_honorable_white_left.png');
 }
 #awwwards.right.white a {
-	background-image:url('images/awwwards_nominee_white_right.png');
+	background-image:url('ribbons/awwwards_honorable_white_right.png');
 }
 
 /* Green */
 
 #awwwards.left.green a {
-	background-image:url('images/awwwards_nominee_green_left.png');
+	background-image:url('ribbons/awwwards_honorable_green_left.png');
 }
 #awwwards.right.green a {
-	background-image:url('images/awwwards_nominee_green_right.png');
+	background-image:url('ribbons/awwwards_honorable_green_right.png');
 }
 
 
@@ -94,28 +94,28 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	/* Gray */
 
 	#awwwards.left.black a {
-		background-image:url('images/awwwards_nominee_black_left2x.png');
+		background-image:url('ribbons/awwwards_honorable_black_left2x.png');
 	}
 	#awwwards.right.black a {
-		background-image:url('images/awwwards_nominee_black_right2x.png');
+		background-image:url('ribbons/awwwards_honorable_black_right2x.png');
 	}
 
 	/* White */
 
 	#awwwards.left.white a {
-		background-image:url('images/awwwards_nominee_white_left2x.png');
+		background-image:url('ribbons/awwwards_honorable_white_left2x.png');
 	}
 	#awwwards.right.white a {
-		background-image:url('images/awwwards_nominee_white_right2x.png');
+		background-image:url('ribbons/awwwards_honorable_white_right2x.png');
 	}
 
 	/* Green */
 
 	#awwwards.left.green a {
-		background-image:url('images/awwwards_nominee_green_left2x.png');
+		background-image:url('ribbons/awwwards_honorable_green_left2x.png');
 	}
 	#awwwards.right.green a {
-		background-image:url('images/awwwards_nominee_green_right2x.png');
+		background-image:url('ribbons/awwwards_honorable_green_right2x.png');
 	}
 	
 }
