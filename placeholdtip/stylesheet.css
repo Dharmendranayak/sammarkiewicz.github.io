@@ -298,6 +298,10 @@ pre {
   pre .jquery-id {
     color: rgb(213, 39, 39);
   }
+  pre .comment {
+    font-style: italic;
+    color: #bbb;
+  }
 
 /* Clear elements with div or span... */
 .clear {
