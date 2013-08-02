@@ -1,0 +1,370 @@
+/* @project    :  */
+/* @author     :  */
+/* @date       :  */
+/* @author URL :  */
+
+/* Summary */
+/* 1 - Reset         */
+/* 2 - fx            */
+/* 3 - Fonts         */
+/* 4 - UI            */
+/* 5 - Global        */
+/* 6 - Pages         */
+/* 7 - JS            */
+/* 8 - Media Queries */
+
+/* 1 - Reset         */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 2 - fx            */
+/* Includes special classes or behaviors for CSS3 effects*/
+
+/* 3 - Fonts         */
+/* Includes all fonts with @font-face */
+
+/* 4 - UI            */
+/* Includes styles for all UI elements (buttons, inputs, tables, etc...) */
+
+/* 5 - Global        */
+/* Includes all common classes for the website */
+
+body {
+   font-family: 'AmbleLight';
+   font-size: .85em;
+}
+
+.m-box--fullwidth {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.m-box--subtitle {
+  width: 112px;
+  height:112px;
+  display: block;
+}
+
+.l-box--title-deco {
+  width: 185px;
+  height: 1px;
+  display: block;
+  border-top: 1px solid #FF5739;
+  position: relative;
+  left: 50%;
+  margin-left: -93px;
+}
+
+  .l-box--title-deco:first-child {
+    margin-bottom:.35em;
+  }
+
+  .l-box--title-deco:last-child {
+    margin-top:.35em;
+  }
+
+.l-box--demo .l-box--title-deco {
+  border-top: 1px solid #FFF;
+}
+
+.l-subtitle--what {
+  text-indent: -999em;
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  margin-left: -56px;
+  background: transparent url('images/what.png') 0 0 no-repeat
+}
+
+.l-subtitle--how {
+  text-indent: -999em;
+  position: relative;
+  left: 50%;
+  margin-left: -56px;
+  margin-bottom: .5em;
+  background: transparent url('images/how-to.png') 0 0 no-repeat
+}
+
+.l-subtitle--demo {
+  text-indent: -999em;
+  position: relative;
+  top: -.35em;
+  left: 50%;
+  margin-left: -56px;
+  background: transparent url('images/demo.png') 0 0 no-repeat
+}
+
+.clearbox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+hgroup {
+  padding: 5em 0 7em;
+}
+
+h1, h2 {
+  text-align: center
+}
+
+h1 {
+  width: 564px;
+  height: 114px;
+  text-indent: -999em;
+  margin: 0 auto;
+  background: transparent url('images/logo.png') 0 0 no-repeat
+}
+
+[role="banner"] {
+  background: #FFFFFF;
+  width: 100%;
+  border-top: 10px solid #FF5739;
+}
+
+.m-box--intro, .l-box--demo {
+  background: #FF5739;
+  color: #fff;
+  position: relative;
+}
+  .m-box--intro [role="main"] {
+    padding: 7.5em 5em 1.5em;
+  }
+  .m-box--intro h2 strong {
+    display: none;
+  }
+  .m-box--intro p {
+    font-size: 1.5em;
+    margin: 0 0 1em;
+    line-height: 1.6em;}
+  .m-box--intro em {
+    font-family: 'AmbleLightItalic';
+  }
+  .m-box--intro strong {
+    font-family: 'AmbleBold';
+    font-size: 1.1em;
+    border-left: 2px solid white;
+    display: inline-block;
+    padding: 0 0 0 1em;
+    margin: 0 0 0 -1em;
+}
+  .m-box--intro h3 strong {
+  }
+
+.l-box--howto, .l-box--demo {
+  margin: 2em auto 1em;
+}
+  .l-box--howto h3, .l-box--demo h3 {
+    font-family: 'edmondsans_boldregular';
+    font-size: 5.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF5739
+  }
+  .l-box--demo h3 {
+    color: #fff;
+  }
+
+  .l-box--demo {
+    margin-top: 7em;
+  }
+
+.demo {
+  padding: 0 0 2em;
+}
+  .demo label {
+    display: block;
+    position: relative;
+    margin: 1em auto 0;
+    width: 230px;
+}
+  .demo label > span {
+    display: none; /* Allow you to keep label info for accessibilty purpose, and remove it visually */
+  }
+  .demo input {
+    font-family: 'AmbleLightItalic';
+    font-size: 1.3em;
+    border: 1px solid #bbb;
+    padding: .8em 1em;
+    -webkit-box-shadow: inset 1px 1px 2px #CCC;
+    -webkit-border-radius: 3px;
+    }
+
+dt {
+  font-family: 'edmondsans_boldregular';
+  font-size: 2.4em;
+  text-align: center;
+  line-height: 90px;
+  margin: 1em auto .15em;
+  color: #FF5739;
+  height: 80px;
+  width: 80px;
+  border: 5px solid #DAD2CF;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+}
+
+dd {
+  padding: 0 0 .45em;
+  margin: 0 0 1.5em;
+}
+  dd p {
+    font-family: 'AmbleRegular';
+    font-size: 1.5em;
+    color: #A38D87;
+    text-align: center;
+    margin: 1em 0
+  }
+  dd p strong {
+    color: #FF5739;
+  }
+  dd:last-child {
+    margin-bottom: 0;
+    border-bottom: 0
+  }
+
+pre {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: .95em;
+  line-height: 1.45em;
+  border: 1px solid #FF5739;
+  margin: 1.85em auto 1em;
+  padding: 1em;
+  background: #FAEFEC;
+  color: #666;
+  white-space: normal;
+  width: 80%;
+}
+  pre .tag {
+    color: #FFA966;
+  }
+  pre .equal_to {
+    color: white
+  }
+  pre .equal_to {
+    color: #F34460;}
+  pre .jquery {
+    color: rgb(209, 94, 94);
+  }
+  pre .jquery-id {
+    color: rgb(213, 39, 39);
+  }
+
+/* Clear elements with div or span... */
+.clear {
+  width:100%;
+  clear:both;
+  height:0px;
+  display:block
+}
+
+/* ...or with the CSS-tricks method - http://css-tricks.com/snippets/css/clear-fix/ */
+
+.your-class:before,
+.your-class:after {
+    content: "";
+    display: table;
+}
+.your-class:after {
+    clear: both;
+}
+.your-class {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Hide or show specific elements on mobile */
+.show-on-phone {
+  display:none;
+}
+
+.hide-on-phone {
+  display: inline-block
+}
+
+.left {
+  float: left;
+  display: inline-block;
+  zoom: 1;
+  *display: inline
+}
+
+.right {
+  float: right;
+  display: inline-block;
+  zoom: 1;
+  *display: inline
+}
+
+
+/* 6 - Pages         */
+/* Styles for all other pages (subdivise with a/index, b/contact, etc... */
+
+/* 7 - JS            */
+/* Includes special classes for js */
+
+/* 8 - Media Queries */
+/* Includes media queries*/
+
+/* For mobile */
+@media only screen and (max-width: 767px) {
+  .show-on-phone {
+    display:inline-block;
+  }
+
+  .hide-on-phone {
+    display: none
+  }
+}
+
+/* For tablets */
+@media only screen and (device-width: 768px), (device-width: 800px) {
+}

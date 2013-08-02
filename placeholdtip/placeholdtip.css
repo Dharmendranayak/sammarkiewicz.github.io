@@ -1,0 +1,88 @@
+/* Placeholdtip styles */
+
+
+label {
+  position: relative
+}
+
+
+.placeholdtip {
+  position: absolute;
+  background: #efefef;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #444;
+  z-index: 20
+}
+
+.placeholdtip-left {
+  left: -105%;
+  top: 10%;
+  width: 100%;
+}
+
+.placeholdtip-right {
+  right: -105%;
+  top: 10%;
+  width: 100%;
+}
+
+.placeholdtip-top {
+  width: 100%;
+  margin-left: -50%;
+  left: 50%;
+  top: -100%;
+}
+
+.placeholdtip:after {
+  color: #ccc;
+  font-size: 2em;
+  width: 100%;
+  text-align: center
+}
+
+.placeholdtip-bottom {
+  right: 50%;
+  bottom: -100%;
+  width: 100%;
+  margin-left: -50%;
+  left: 50%;
+}
+
+.placeholdtip-top:after {
+  content: '\25BE';
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+}
+
+.placeholdtip-bottom:after {
+  content: '\25B4';
+  position: absolute;
+  top: -45%;
+  left: 0;
+}
+
+.placeholdtip-left:after {
+  content: '\25B8';
+  position: absolute;
+  top: 20%;
+  right: -5%;
+  width: auto;
+}
+
+.placeholdtip-right:after {
+  content: '\25C2';
+  position: absolute;
+  top: 25%;
+  left: -5%;
+  width: auto;
+
+}

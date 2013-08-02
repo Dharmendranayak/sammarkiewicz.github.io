@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Placehold'Tip - A simple jQuery plugin by Sam Markiewicz</title>
+  <link rel="stylesheet" href="fonts.css"></head>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="placeholdtip.css">
+</head>
+<body>
+  <a href="https://github.com/you">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <header role="banner">
+    <hgroup class="m-box--fullwidth">
+      <h1>Placehold'Tip</h1>
+    </hgroup>
+  </header>
+  <div class="m-box--intro">
+    <section role="main" class="m-box--fullwidth clearbox">
+      <header>
+        <h2>
+          <i class="m-box--subtitle l-subtitle--what"></i>
+          <strong>What is Placehold'Tip ?</strong>
+        </h2>
+      </header>
+      <article>
+        <p>
+          <strong>Placehold'Tip is a simple lightweight plugin that helps you improve user experience in your forms using HTML5 placeholders.</strong>
+        </p>
+        <p>
+          It starts at the simple observation that, many times, for a long or short form, users forget what they had to fill.
+        </p>
+        <p>
+          To help with that, Placehold'Tip creates a simple tooltip with the former placeholder info once you start typing, and make it disappear when you leave the field. The tooltip reappears if you come in the field again.
+        </p>
+        <p><em>It's as simple as that !</em></p>
+      </article>
+    </section>
+  </div>
+  <section role="main" class="m-box--fullwidth l-box--howto">
+    <header>
+      <h3>
+        <i class="m-box--subtitle l-subtitle--how"></i>
+        <strong>
+          <span class="l-box--title-deco"></span>
+          How to use it ?
+          <span class="l-box--title-deco"></span>
+        </strong>
+      </h3>
+    </header>
+    <dl>
+      <dt>1</dt>
+      <dd>
+        <p>Include the latest version of <strong>jQuery</strong></p>
+        <pre>
+          <code>
+
+              <span class="tag">&lt;script</span> type="<span class="equal_to">text/javascript</span>" src="<span class="equal_to">http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;
+            </span>
+            <span class="tag">&lt;/script&gt;</span>
+          </code>
+        </pre>
+      </dd>
+      <dt>2</dt>
+      <dd>
+        <p>Include <strong>placeholdtip.js</strong> and <strong>placeholdtip.css</strong></p>
+        <pre>
+          <code>
+              <span class="tag">&lt;script</span> type=<span class="equal_to">"text/javascript"</span> src=<span class="equal_to">"placeholdtip.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+            <br/>
+            <span class="tag">&lt;link</span> rel=<span class="equal_to">"stylesheet"</span> href=<span class="equal_to">"stylesheet.css"</span><span class="tag">&gt;</span>
+          </code>
+        </pre>
+      </dd>
+      <dt>3</dt>
+      <dd>
+        <p>Put your <strong>HTML</strong></p>
+        <pre>
+          <code>
+            <span class="tag">&lt;form</span> action=<span class="equal_to">""</span> id=<span class="equal_to">"formOne"</span><span class="tag">&gt;</span>
+              <br/>
+              &nbsp;<span class="tag">&lt;label</span> for=<span class="equal_to">"name"</span><span class="tag">&gt;</span>
+                <br/>
+                &nbsp;&nbsp;<span class="tag">&lt;span&gt;</span>Name<span class="tag">&lt;/span&gt;</span>
+                <br/>
+                &nbsp;&nbsp;<span class="tag">&lt;input</span> type=<span class="equal_to">"text"</span> placeholder=<span class="equal_to">"Enter your name"</span> id=<span class="equal_to">"name"</span>class=<span class="equal_to">"placeholderTip"</span><span class="tag">&gt;</span>
+                <br/>
+                &nbsp;<span class="tag">&lt;/label&gt;</span>
+                <br/>
+            <span class="tag">&lt;/form&gt;</span>
+          </code>
+        </pre>
+      </dd>
+      <dt>4</dt>
+      <dd>
+        <p><strong>Activate</strong> the plugin, and voila !</p>
+        <pre>
+          <code>
+            <span class="tag">&lt;script&gt;</span>
+            <br/>
+            &nbsp;$(<span class="jquery">document</span>).ready(<span class="jquery">function</span>() {
+            <br/>
+    &nbsp;&nbsp;$('<span class="jquery-id">#testForm</span>').placeholdTip();
+  &nbsp;});
+  <br/>
+<span class="tag">&lt;/script&gt;</span>
+          </code>
+        </pre>
+      </dd>
+    </dl>
+  </section>
+  <section role="main" class="l-box--demo">
+    <header>
+      <h3>
+        <i class="m-box--subtitle l-subtitle--demo"></i>
+        <strong>
+          <span class="l-box--title-deco"></span>
+          Demo
+          <span class="l-box--title-deco"></span>
+        </strong>
+      </h3>
+    </header>
+    <article class="demo">
+      <form action="" id="formOne">
+        <label for="name">
+          <span>Name</span>
+          <input type="text" placeholder="Enter your name" id="name" class="placeholderTip"></label>
+        <label for="address">
+          <span>Address</span>
+          <input type="text" placeholder="Enter your address" id="address" class="placeholderTip"></label>
+      </form>
+      <form action="" id="formTwo">
+        <label for="phone">
+          <span>Phone</span>
+          <input type="text" placeholder="Enter your phone" id="phone" class="placeholderTip"></label>
+        <label for="zip">
+          <span>ZipCode</span>
+          <input type="text" placeholder="Enter your zip code" id="zip" class="placeholderTip"></label>
+      </form>
+    </article>
+  </section>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="tooltip.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#formOne').placeholdTip({
+      tipPosition: 'right'
+    });
+    $('#formTwo').placeholdTip({
+      tipPosition: 'left'
+    });
+  });
+
+</script>
+</body>
+</html>
