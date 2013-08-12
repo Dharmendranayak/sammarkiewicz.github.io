@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  * {margin: 0; padding: 0}
+  body, html {position: relative; width: 100%; height: 100%; }
+  #scene-1 {width: 100%; height: 100%; min-height: 13000px}
+  .elements {position: absolute;}
+  .container {position: fixed; overflow: hidden;width: 1000px; margin: 0 0 0 -500px; top: 100px; display: block; height: 500px; left: 50%; }
+  #scene1a {background: transparent url('bear11.gif') center center no-repeat; background-size: 80%;  width: 1000px; height: 600px;}
+  #scene2a {width:300px; height: 500px; background: pink; left: 0;}
+  #scene2b {width:300px; height: 500px; background: blue; left: 320px;}
+  #scene2c {width:300px; height: 500px; background: yellow; left: 640px;}
+  #scene2-alert {width: 300px; top: 100px; height: 150px; left: 50%; margin-left: -150px; -webkit-border-radius: 10px; background: white; border: 1px solid #efefef}
+  #nav {position: fixed; top: 2%; left: 40%}
+  #interText1 {text-align: center; padding: 50px 0 0; font-size: 1.5em}
+  .scroll {position: relative; z-index: 20;}
+</style>
+
+<body>
+  <div id="nav">
+    <a href="#scene-1">rewind</a>
+    <br/>
+    <a href="#scene-2" class="scroll">Story (to scene 2)</a>
+  </div>
+  <section id="scene-1"></section>
+  <section id="scene-2"></section>
+
+ <div class="container">
+    <div id="scene1a" class="elements" data-start="top: 0px" data-600-start="top: -1000px">Mr Bear was alone in his house, spending a lot of time, seeing friend on his mobile.<br/><a href="#scene-2" class="scroll">But whas his friend were really doing ?</a></div>
+    <div class="elements container" id="interText1" data-start="opacity: 0" data-800-start="opacity: 0" data-850-start="opacity: 1" data-4200-start="opacity: 1" data-4500-start="opacity: 0">
+      Well, during this time, some of them, in the real world, where there...
+    </div>
+    <div id="scene2a" class="elements" data-start="top: -600px" data-6000-start="top: -600px" data-7000-start="top: 0px">Some of them where in the park...</div>
+      <div id="scene2b" class="elements" data-start="bottom: -600px"  data-6200-start="bottom: -600px" data-7400-start="bottom: 0px">Others on a boat...</div>
+      <div id="scene2c" class="elements" data-start="top: -600px"  data-6400-start="top: -600px" data-7600-start="top: 0px">And some others in a party</div>
+      <div id="scene2-alert" class="elements"data-start="opacity: 0" data-12000-start="opacity: 0" data-12100-start="opacity: 1"> Hey ! I'm the bear, where are you now ?</div>
+  </div>
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="skrollr.js"></script>
+  <script src="smooth.js"></script>
+  <script>
+    $(document).ready(function(){
+      skrollr.init({
+        forceHeight: false
+      });
+      $('.scroll').smoothScroll({
+        speed: 9000
+      });
+    })
+  </script>
+</body>
+</html>
