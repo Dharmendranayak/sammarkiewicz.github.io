@@ -26,20 +26,26 @@
       <div id="bear-scene1" data-start="right: -100%" data-1000-start="right: 35%">
         <a href="#" id="bear"></a>
         <div id="popup-send">
-          Would you like to send this message ?
-          <br>
-          <a href="#scene-3" class="send-msg">Yes</a>
+          <a href="#scene-3" class="send-msg">Would you like to send this message ?</a>
         </div>
       </div>
-      <div id="plane-mini" data-start="right: 20%" data-1100-start="right: 20%"  data-1600-start="right: -100%"></div>
+      <div id="plane-mini" data-start="right: 43%" data-1100-start="right: 43%"  data-1600-start="right: -100%"></div>
     </div>
     <div id="transition" data-start="background-position: 0px 0px" data-1760-start="background-position: 0px 0px" data-6000-start="background-position: -5100px 0px">
-      <div id="plane-small" data-start="left: -100%; opacity: 0" data-1540-start="left: -100%; opacity: 0" data-2100-start="left: 40%; opacity: 1" data-4800-start="opacity: 1" data-5200-start="opacity: 0">
+      <div id="plane-small" data-start="left: -100%; opacity: 0" data-1540-start="left: -100%; opacity: 0" data-3000-start="left: 40%; opacity: 1" data-4800-start="opacity: 1" data-5200-start="opacity: 0">
 
       </div>
-      <div id="panel-1" data-start="top: -100%; left: 0px; opacity: 0" data-5600-start="top: -100%; left: 0px; opacity: 0" data-7000-start="top: 0; left: 0; opacity: 1"></div>
-      <div id="panel-2"data-start="bottom: -100%; left: 33%; opacity: 0" data-5600-start="bottom: -100%; left: 33%; opacity: 0" data-7000-start="bottom: 0; left: 33%; opacity: 1"></div>
-      <div id="panel-3"data-start="top: -100%; left: 66%; opacity: 0" data-5600-start="top: -100%; left: 66%; opacity: 0" data-7000-start="top: 0; left: 66%; opacity: 1"></div>
+      <div id="panel-1" data-start="top: -100%; left: 0px; opacity: 0" data-5600-start="top: -100%; left: 0px; opacity: 0" data-7000-start="top: 0; left: 0; opacity: 1">
+        <div id="balloon"></div>
+        <div id="fox" data-start="bottom: 0; left: -100%; opacity: 0" data-5600-start="bottom: 0; left: -100%; opacity: 0" data-7000-start="bottom: 0; left: 23%; opacity: 1"></div>
+      </div>
+      <div id="panel-2" data-start="top: -100%; left: 33%; opacity: 0" data-6600-start="top: -100%; left: 33%; opacity: 0" data-8000-start="top: 0; left: 33%; opacity: 1">
+        <div id="wave" data-start="bottom: -200px; opacity: 0" data-6600-start="bottom: -200px; opacity: 0" data-8000-start="bottom: -10px; opacity: 1"></div>
+        <div id="boat" data-start="bottom: -200px; left: -100%; opacity: 0" data-6600-start="bottom: -200px; left: -100%; opacity: 0" data-8000-start="bottom: 120px; left: 50%; opacity: 1"></div>
+      </div>
+      <div id="panel-3"data-start="top: -100%; left: 66%; opacity: 0" data-7600-start="top: -100%; left: 66%; opacity: 0" data-9000-start="top: 0; left: 66%; opacity: 1">
+        <div id="moose" data-start="bottom: 0; right: -100%; opacity: 0" data-7600-start="bottom: 0; right: -100%; opacity: 0" data-9000-start="bottom: 0; right: 23%; opacity: 1"></div>
+      </div>
     </div>
     <div id="scene-3"></div>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -56,7 +62,7 @@
       });
 
       $('.send-msg').smoothScroll({
-        speed: 10000
+        speed: 11000
       });
 
       $('.scroll').smoothScroll({
