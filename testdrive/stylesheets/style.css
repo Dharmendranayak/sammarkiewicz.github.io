@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0}
-body, html {position: relative; width: 100%; height: 100%; }
+body, html {position: relative; width: 100%; height: 100%;   font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased;}
 #scene-1 {width: 100%; height: 100%; min-height: 13000px}
 .elements {position: absolute;}
 .container {position: fixed; overflow: hidden;width: 1000px; margin: 0 0 0 -500px; top: 100px; display: block; height: 600px; left: 50%; background: white }
@@ -15,45 +15,118 @@ body, html {position: relative; width: 100%; height: 100%; }
 .scroll {position: relative; z-index: 20;}
 .popup {display: none; padding: 20px; background: white; -webkit-border-radius: 10px; border-radius: 10px; position: absolute; top: -30%; border: 1px solid #ccc;}
 
+#story-1 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  position: fixed;
+  width: 400px;
+  top: 30%;
+  color: white;
+  right: 5%;
+}
+
+#story-2 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  position: fixed;
+  width: 400px;
+  text-align: center;
+  top: 5%;
+  color: #6A8DB2;
+  left: 50%;
+  margin-left: -200px;
+  z-index:11;
+}
+
+#story-3 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  position: fixed;
+  width: 400px;
+  text-align: center;
+  top: 10%;
+  color: white;
+  left: 50%;
+  margin-left: -200px;
+  z-index:11;
+}
+
+#story-4 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  position: fixed;
+  width: 400px;
+  text-align: center;
+  top: 10%;
+  color: white;
+  left: 50%;
+  margin-left: -200px;
+  z-index:11;
+}
+
+#story-5 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  position: fixed;
+  width: 400px;
+  text-align: center;
+  top: 10%;
+  color: white;
+  left: 50%;
+  margin-left: -200px;
+  z-index:11;
+}
 
 #header {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background: white url('../images/scene-first3.jpg') top center no-repeat;
+  background: white url('../images/scene-first4.jpg') top center no-repeat;
   height: 1760px;
   position: relative;
 }
 #bear-scene1 {
   background: transparent url('../images/bear15.gif') center center no-repeat;
-  background-size: 80%;
-  width: 399px;
+  background-size: 100%;
+  width: 320px;
   height: 520px;
   bottom: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 #ride {
   position: absolute;
-  width: 20px;
+  width: 90px;
   height: 20px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -45px;
   top: 140px;
-  font-size: 2em;
   color: #D3C99A;
   text-decoration: none;
+  text-align: center
   animation: ride 2s;
   -webkit-animation: ride 2s infinite; /* Safari and Chrome */
 }
 
+#ride span {
+  font-size: 1.4em;
+  display: inline-block;
+  *zoom: 1;
+  display: inline
+}
+
 #bear {
-  width: 399px;
+  width: 320px;
   height: 520px;
   display: block
 }
 
-#scene-2 {
+#scene-2, #scene-2-stop {
   width: 100%;
   height: 750px;
   bottom: 0;
@@ -69,6 +142,7 @@ body, html {position: relative; width: 100%; height: 100%; }
   position: fixed;
   bottom: 40%;
   right: 25%;
+  z-index: 5
 }
 
 #popup-send a {
@@ -98,6 +172,50 @@ body, html {position: relative; width: 100%; height: 100%; }
   background: transparent url('../images/plane-small2.png') center center no-repeat;
 }
 
+#cloud-1 {
+  width: 149px;
+  height: 45px;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  background: transparent url('../images/cloud-1.png') center center no-repeat;
+  animation: cloud1 70s;
+  -webkit-animation: cloud1 70s infinite linear; /* Safari and Chrome */
+}
+
+#cloud-2 {
+  width: 216px;
+  height: 103px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: transparent url('../images/cloud-2.png') center center no-repeat;
+  animation: cloud2 72s;
+  -webkit-animation: cloud2 72s infinite linear; /* Safari and Chrome */
+}
+
+#cloud-3 {
+  width: 144px;
+  height: 71px;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  background: transparent url('../images/cloud-3.png') center center no-repeat;
+  animation: cloud3 68s;
+  -webkit-animation: cloud3 68s infinite linear; /* Safari and Chrome */
+}
+
+#cloud-4 {
+  width: 107px;
+  height: 55px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  background: transparent url('../images/cloud-4.png') center center no-repeat;
+  animation: cloud4 74s;
+  -webkit-animation: cloud4 74s infinite linear; /* Safari and Chrome */
+}
+
 #logo {
   width: 152px;
   height: 55px;
@@ -107,14 +225,54 @@ body, html {position: relative; width: 100%; height: 100%; }
   margin-left: -76px;
   top: 70px;
   text-indent: -999em;
-  display: none
+  display: none;
 }
+
+#tips {
+  position: fixed;
+  padding: 20px;
+  width: 300px;
+  color: #444;
+  top: 20%;
+  left: 50%;
+  margin-left: -160px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-size: .9em;
+  z-index: 10
+}
+
+#infoBar {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 20px 20px 0;
+  background: rgba(0,0,0,0.8);
+  color: #efefef;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+/*  font-family: 'VT323', cursive;*/
+  font-size: 1em;
+}
+
+/*#infoReveal {
+  border: 1px solid #666;
+  height: 40px
+}*/
 
 #transition {
   width:100%;
-  height: 9000px;
+  height: 15000px;
+  position: relative;
   background: transparent url('../images/scene-transit-1e.jpg') 0 0 no-repeat fixed;
 }
+
+.panel {cursor:crosshair; z-index: 5;}
 
 #panel-1 {
   position: fixed;
@@ -198,6 +356,137 @@ body, html {position: relative; width: 100%; height: 100%; }
   -webkit-animation: boat 6s infinite linear; /* Safari and Chrome */
 }
 
+#scene-2-stop {
+  height: 3900px
+}
+
+#bear-notif {
+  width: 220px;
+  height: 220px;
+  background: transparent url('../images/notif-bear.png') center center no-repeat;
+  position: fixed;
+  bottom: 10%;
+  margin-left: -110px;
+  left: 50%;
+  display: block;
+  z-index: 2
+}
+
+#scene-3 {
+  width: 1365px;
+  overflow: hidden;
+  z-index: 31;
+  height: 4500px;
+  background: transparent url('../images/scenes3.jpg') 0 0 no-repeat fixed;
+  margin: 0 auto;
+}
+
+#scene-3-a, #scene-3-b,
+#scene-3-c
+ {
+  width: 100%;
+  height: 1500px;
+  position: relative
+}
+
+#nav-slider {
+  position: fixed;
+  top: 5%;
+  z-index: 30;
+  width: 150px;
+  margin-left: -75px;
+  left: 50%;
+  list-style-type: none
+}
+
+#nav-slider li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+#nav-slider a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #ccc;
+  margin: 0 3px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%
+}
+
+.character {
+  position: fixed;
+  top: 570px;
+}
+
+#fox-scene {
+  width: 157px;
+  height: 247px;
+  display: block;
+  left: 100px;
+  background: transparent url('../images/ms-fox.png') center center no-repeat;
+}
+
+#elephant {
+  width: 267px;
+  height: 438px;
+  top: 395px;
+  display: block;
+  background: transparent url('../images/elephant.png') center center no-repeat;
+}
+
+#lionness {
+  width: 207px;
+  height: 394px;
+  top: 430px;
+  display: block;
+  background: transparent url('../images/lionness.png') center center no-repeat;
+}
+
+#moose-character {
+  width: 276px;
+  height: 438px;
+  display: block;
+  top: 370px;
+  background: transparent url('../images/moose-scene.png') center center no-repeat;
+}
+
+#bear-character {
+  width: 240px;
+  height: 434px;
+  display: block;
+  top: 395px;
+  left: 50%;
+  margin-left: -120px;
+  background: transparent url('../images/bear-scene.png') center center no-repeat;
+}
+
+#flamingo {
+  width: 163px;
+  height: 531px;
+  top: 305px;
+  display: block;
+  background: transparent url('../images/flamingo.png') center center no-repeat;
+}
+
+#raccoon {
+  width: 192px;
+  height: 236px;
+  display: block;
+  right: 100px;
+  background: transparent url('../images/raccoon.png') center center no-repeat;
+}
+
+#panda {
+  width: 245px;
+  height: 419px;
+  top: 395px;
+  display: block;
+  background: transparent url('../images/panda.png') center center no-repeat;
+}
+
 @keyframes ride
 {
 0% {top: 140px;}
@@ -225,6 +514,55 @@ body, html {position: relative; width: 100%; height: 100%; }
 50% {right: 50%;}
 100% {right: 200%;}
 }
+
+@keyframes cloud1
+{
+0% {left: -10%;}
+100% {left: 100%;}
+}
+
+@-webkit-keyframes cloud1 /* Safari and Chrome */
+{
+0% {left: -10%;}
+100% {left: 100%;}
+}
+
+@keyframes cloud2
+{
+0% {left: -40%;}
+100% {left: 100%;}
+}
+
+@-webkit-keyframes cloud2 /* Safari and Chrome */
+{
+0% {left: -40%;}
+100% {left: 100%;}
+}
+
+@keyframes cloud3
+{
+0% {left: -70%;}
+100% {left: 100%;}
+}
+
+@-webkit-keyframes cloud3 /* Safari and Chrome */
+{
+0% {left: -70%;}
+100% {left: 100%;}
+}
+
+@keyframes cloud4
+{
+0% {left: -50%;}
+100% {left: 100%;}
+}
+
+@-webkit-keyframes cloud4 /* Safari and Chrome */
+{
+0% {left: -50%;}
+100% {left: 100%;}
+}
+
 
 @keyframes wave
 {
