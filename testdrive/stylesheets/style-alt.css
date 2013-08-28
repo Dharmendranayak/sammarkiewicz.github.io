@@ -32,11 +32,10 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   line-height: 1.6em;
   position: fixed;
   width: 400px;
-  text-align: center;
-  top: 5%;
-  color: #6A8DB2;
-  left: 50%;
-  margin-left: -200px;
+  text-align: left;
+  top: 200px;
+  color: white;
+  left: 100px;
   z-index:11;
 }
 
@@ -46,36 +45,23 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   line-height: 1.6em;
   position: fixed;
   width: 400px;
-  text-align: center;
-  top: 10%;
-  color: white;
-  left: 50%;
-  margin-left: -200px;
+  top: 290px;
+  color: #444;
   z-index:11;
+  background: white;
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-#story-4 {
+#story-4, #story-5, #story-6 {
   font-family: 'Boogaloo', cursive;
   font-size: 1.5em;
   line-height: 1.6em;
   position: fixed;
   width: 400px;
   text-align: center;
-  top: 10%;
-  color: white;
-  left: 50%;
-  margin-left: -200px;
-  z-index:11;
-}
-
-#story-5 {
-  font-family: 'Boogaloo', cursive;
-  font-size: 1.5em;
-  line-height: 1.6em;
-  position: fixed;
-  width: 400px;
-  text-align: center;
-  top: 10%;
+  top: 100px;
   color: white;
   left: 50%;
   margin-left: -200px;
@@ -86,8 +72,8 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background: white url('../images/scene-first4.jpg') top center no-repeat;
-  height: 1760px;
+  background: white url('../images/scene-first4.jpg') center 0px no-repeat fixed;
+  height: 60000px;
   position: relative;
 }
 #bear-scene1 {
@@ -95,43 +81,53 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   background-size: 100%;
   width: 320px;
   height: 520px;
-  bottom: 0;
-  position: absolute;
+  top: 240px;
+  position: fixed;
   z-index: 3;
 }
-#ride {
-  position: absolute;
+
+
+#ride, #ride2, #ride3, #ride4 {
+  position: fixed;
   width: 90px;
-  height: 20px;
   left: 50%;
   margin-left: -45px;
-  top: 300px;
-  color: #D3C99A;
-  text-decoration: none;
-  text-align: center
-  animation: ride 2s;
-  -webkit-animation: ride 2s infinite; /* Safari and Chrome */
+  bottom: 0px;
 }
 
-#ride span {
-  font-size: 1.4em;
-  display: inline-block;
-  *zoom: 1;
-  display: inline
+#ride5, #ride6, #ride7, #ride8 {
+  position: fixed;
+  width: 90px;
+  top: 35%;
 }
 
-#ride2 {
+.ride.left {
+  left: 25px;
+}
+
+.ride.right {
+  right: 25px;
+}
+
+.ride {
   font-size: 5em;
   color: white;
   -webkit-transform: rotate(-90deg);
-  position: absolute;
-  width: 90px;
-  left: 50%;
-  margin-left: -45px;
-  top: 670px;
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   text-decoration: none;
   text-align: center;
   z-index: 30
+}
+
+.ride.no-rotate {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.ride.dark {
+  color: black;
 }
 
 #bear {
@@ -140,9 +136,27 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   display: block
 }
 
-#scene-2, #scene-2-stop {
+#scene-1-stop {
+  height: 35000px;
   width: 100%;
-  height: 750px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1
+}
+
+ #scene-2-stop {
+  width: 100%;
+  height: 27500px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1
+}
+
+ #scene-2-stop2 {
+  width: 100%;
+  height: 25500px;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -152,7 +166,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #popup-send {
   width: 250px;
   height: 250px;
-  display:none;
   position: fixed;
   bottom: 40%;
   right: 25%;
@@ -171,11 +184,10 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 118px;
   height: 71px;
   background: transparent url('../images/plane-mini2.png') center center no-repeat;
-  display: none;
-  position: absolute;
-  bottom: 13%;
+  position: fixed;
+  top: 480px;
   right: 43%;
-  z-index: 2
+  z-index: 4
 }
 
 #plane-small {
@@ -281,7 +293,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 
 #transition {
   width:100%;
-  height: 15000px;
+  height: 70000px;
   position: relative;
   background: transparent url('../images/scene-transit-1e.jpg') 0 0 no-repeat fixed;
 }
@@ -370,10 +382,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   -webkit-animation: boat 6s infinite linear; /* Safari and Chrome */
 }
 
-#scene-2-stop {
-  height: 3900px
-}
-
 #bear-notif {
   width: 220px;
   height: 220px;
@@ -390,7 +398,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 1365px;
   overflow: hidden;
   z-index: 31;
-  height: 4500px;
+  height: 30000px;
   background: transparent url('../images/scenes3.jpg') 0 0 no-repeat fixed;
   margin: 0 auto;
 }
@@ -399,7 +407,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #scene-3-c
  {
   width: 100%;
-  height: 1500px;
+  height: 10000px;
   position: relative
 }
 
@@ -432,7 +440,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 
 .character {
   position: fixed;
-  top: 570px;
+  bottom: 15px;
 }
 
 #fox-scene {
@@ -446,7 +454,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #elephant {
   width: 267px;
   height: 438px;
-  top: 395px;
   display: block;
   background: transparent url('../images/elephant.png') center center no-repeat;
 }
@@ -454,7 +461,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #lionness {
   width: 207px;
   height: 394px;
-  top: 430px;
   display: block;
   background: transparent url('../images/lionness.png') center center no-repeat;
 }
@@ -463,7 +469,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 276px;
   height: 438px;
   display: block;
-  top: 370px;
   background: transparent url('../images/moose-scene.png') center center no-repeat;
 }
 
@@ -471,7 +476,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 240px;
   height: 434px;
   display: block;
-  top: 395px;
+  bottom: 15px;
   left: 50%;
   margin-left: -120px;
   background: transparent url('../images/bear-scene.png') center center no-repeat;
@@ -480,7 +485,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #flamingo {
   width: 163px;
   height: 531px;
-  top: 305px;
   display: block;
   background: transparent url('../images/flamingo.png') center center no-repeat;
 }
@@ -496,7 +500,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 #panda {
   width: 245px;
   height: 419px;
-  top: 395px;
   display: block;
   background: transparent url('../images/panda.png') center center no-repeat;
 }
