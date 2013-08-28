@@ -45,7 +45,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   line-height: 1.6em;
   position: fixed;
   width: 400px;
-  top: 290px;
+  top: 160px;
   color: #444;
   z-index:11;
   background: white;
@@ -401,7 +401,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   height: 30000px;
   margin: 0 auto;
   background: transparent url('../images/scenes3.jpg') 0 0 no-repeat fixed;
-  position: relative
 }
 
 #scene-3-a, #scene-3-b,
@@ -744,15 +743,6 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 }
 }
 
-#preloader {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:#fff; /* change if the mask should have another color then white */
-  z-index:99; /* makes sure it stays on top */
-}
 
 #status {
   width:200px;
