@@ -311,6 +311,16 @@
         return false;
       });
 
+      window.addEventListener('DOMContentLoaded', function() {
+        $("body").queryLoader2({
+          backgroundColor: "#fff",
+          barColor: "#222",
+          barHeight: 2,
+          completeAnimation: "fade",
+          percentage: true
+        });
+      });
+
       // $('.panel').on('mouseenter', function(){
       //   $(this).css({opacity: 1});
       // });

@@ -10,7 +10,7 @@
     <title>The Middleman</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|VT323|Boogaloo' rel='stylesheet' type='text/css'>
 
-    <link href="stylesheets/style-alt.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/style-alt.css" media="screen" rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -339,59 +339,59 @@
         ></div>
         <div id="scene-3-a">
           <div class="character" id="fox-scene"
-            data-start="left: -200px"
-            data-115000-start="left: -200px"
-            data-130000-start="left: 380px"
-            data-130010-start="left: 380px"
-            data-132000-start="left: -200px"
+            data-start="left: -100%"
+            data-115000-start="left: -100%"
+            data-130000-start="left: 20%"
+            data-130010-start="left: 20%"
+            data-132000-start="left: -100%"
           ></div>
           <div class="character" id="raccoon"
-            data-start="right: -200px"
-            data-117000-start="right: -200px"
-            data-130000-start="right: 260px"
-            data-130010-start="right: 260px"
-            data-132000-start="right: -200px"
+            data-start="right: -100%"
+            data-117000-start="right: -100%"
+            data-130000-start="right: 15%"
+            data-130010-start="right: 15%"
+            data-132000-start="right: -100%"
           ></div>
           <div class="character" id="flamingo"
-            data-start="right: -200px"
-            data-113000-start="right: -200px"
-            data-130000-start="right: 430px"
-            data-130010-start="right: 430px"
-            data-132000-start="right: -200px"
+            data-start="right: -100%"
+            data-113000-start="right: -100%"
+            data-130000-start="right: 30%"
+            data-130010-start="right: 30%"
+            data-132000-start="right: -100%"
           ></div>
         </div>
         <div id="scene-3-b">
           <div class="character" id="elephant"
-            data-start="right: -500px"
-            data-138000-start="right: -500px"
-            data-140000-start="right: 360px"
-            data-140010-start="right: 360px"
-            data-142000-start="right: -500px"
+            data-start="right: -100%"
+            data-138000-start="right: -100%"
+            data-140000-start="right: 12%"
+            data-140010-start="right: 12%"
+            data-142000-start="right: -100%"
           ></div>
           <div class="character" id="panda"
-            data-start="left: -400px"
-            data-138000-start="left: -400px"
-            data-140000-start="left: 360px"
-            data-140010-start="left: 360px"
-            data-142000-start="left: -400px"
+            data-start="left: -100%"
+            data-138000-start="left: -100%"
+            data-140000-start="left: 12%"
+            data-140010-start="left: 12%"
+            data-142000-start="left: -100%"
           ></div>
         </div>
         <div id="scene-3-c">
           <div class="character" id="lionness"
-            data-start="right: -500px"
-            data-148000-start="right: -500px"
-            data-150000-start="right: 450px"
+            data-start="right: -100%"
+            data-148000-start="right: -100%"
+            data-150000-start="right: 25%"
           ></div>
           <div class="character" id="moose-character"
-            data-start="left: -400px"
-            data-148000-start="left: -400px"
-            data-150000-start="left: 300px"
+            data-start="left: -100%"
+            data-148000-start="left: -100%"
+            data-150000-start="left: 20%"
           ></div>
         </div>
       </div>
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="javascripts/all.js" type="text/javascript"></script>
+  <script src="/javascripts/all.js" type="text/javascript"></script>
   <script>
     $(document).ready(function(){
       skrollr.init({
@@ -458,6 +458,16 @@
       $('#tips a').on('click', function(){
         $("#tips").fadeOut();
         return false;
+      });
+
+      window.addEventListener('DOMContentLoaded', function() {
+        $("body").queryLoader2({
+          backgroundColor: "#fff",
+          barColor: "#222",
+          barHeight: 2,
+          completeAnimation: "fade",
+          percentage: true
+        });
       });
 
       // $('.panel').on('mouseenter', function(){

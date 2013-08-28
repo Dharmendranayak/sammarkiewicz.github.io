@@ -399,8 +399,9 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   overflow: hidden;
   z-index: 31;
   height: 30000px;
-  background: transparent url('../images/scenes3.jpg') 0 0 no-repeat fixed;
   margin: 0 auto;
+  background: transparent url('../images/scenes3.jpg') 0 0 no-repeat fixed;
+  position: relative
 }
 
 #scene-3-a, #scene-3-b,
@@ -409,6 +410,32 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 100%;
   height: 10000px;
   position: relative
+}
+
+#scene-3-a-content, #scene-3-b-content,
+#scene-3-c-content
+ {
+  width: 100%;
+  height: 10000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1
+}
+
+#scene-3-a-content {
+  background: transparent url('../images/scenes3-a.jpg') 0 0 no-repeat fixed;
+  background-size: 100%
+}
+
+#scene-3-b-content {
+  background: transparent url('../images/scenes3-b.jpg') 0 0 no-repeat fixed;
+  background-size: 100%
+}
+
+#scene-3-c-content {
+  background: transparent url('../images/scenes3-c.jpg') 0 0 no-repeat fixed;
+  background-size: 100%
 }
 
 #nav-slider {
@@ -715,6 +742,28 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   -o-transform-origin: rotate(0deg);
   transform-origin: rotate(0deg);
 }
+}
+
+#preloader {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../images/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
 
