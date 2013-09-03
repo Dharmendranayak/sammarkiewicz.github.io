@@ -15,19 +15,34 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 .scroll {position: relative; z-index: 20;}
 .popup {display: none; padding: 20px; background: white; -webkit-border-radius: 10px; border-radius: 10px; position: absolute; top: -30%; border: 1px solid #ccc;}
 
-.pause, .resume {
-  position: fixed;
-  top: 30px;
+.pause, .resume, .back {
+  position: absolute;
+  top: 10px;
   z-index: 200;
-  color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid #efefef;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .pause {
-  left: 30%;
+  left: 50%;
 }
 
 .resume {
-  right: 30%;
+  left: 50%;
+  display: none;
+}
+
+.back {
+  left: 5%;
 }
 
 #story-1 {
@@ -39,6 +54,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   top: 30%;
   color: white;
   right: 5%;
+  z-index: 9
 }
 
 #story-2 {
@@ -60,7 +76,9 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   line-height: 1.6em;
   position: fixed;
   width: 400px;
-  top: 160px;
+  top: 100px;
+  left: 50%;
+  margin-left: -215px;
   color: #444;
   z-index:11;
   background: white;
@@ -88,7 +106,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   margin: 0 auto;
   overflow: hidden;
   background: white url('../images/scene-first4.jpg') center 0px no-repeat fixed;
-  height: 60000px;
+  height: 14000px;
   position: relative;
 }
 #bear-scene1 {
@@ -184,7 +202,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   position: fixed;
   bottom: 40%;
   right: 25%;
-  z-index: 5
+  z-index: 10
 }
 
 #popup-send a {
@@ -209,6 +227,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 250px;
   height: 150px;
   position: fixed;
+  z-index: 10;
   top: 30%;
   background: transparent url('../images/plane-small2.png') center center no-repeat;
 }
@@ -285,35 +304,66 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 }
 
 #infoBar {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 80px;
-  padding: 20px 20px 0;
-  background: rgba(0,0,0,0.8);
-  color: #efefef;
-  text-align: center;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 15%;
+  left: 15%;
   z-index: 10;
-/*  font-family: 'VT323', cursive;*/
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
-/*#infoReveal {
-  border: 1px solid #666;
-  height: 40px
-}*/
+.infoRevealFox {
+  left: 5% !important;
+}
+
+.infoRevealBoat {
+  left: 40% !important;
+}
+
+.infoRevealMoose {
+  left: 70% !important;
+}
+
+.infoReveal {
+  padding: 20px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -border-radius: 50%;
+  font-family: 'Boogaloo', cursive;
+
+  background: rgba(255,255,255,.8);
+  color: #222;
+  text-align: center;
+}
+
+
+#band-top, #band-bottom {
+  background: #222;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+}
+
+#band-top {
+  top: 0;
+  left: 0;
+}
+
+#band-bottom {
+  bottom: 0;
+  left: 0;
+}
 
 #transition {
   width:100%;
-  height: 70000px;
+  height: 35000px;
   position: relative;
   background: transparent url('../images/scene-transit-1e.jpg') 0 0 no-repeat fixed;
 }
 
-.panel {cursor:crosshair; z-index: 5;}
+.panel {z-index: 5;}
 
 #panel-1 {
   position: fixed;
@@ -397,12 +447,24 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   -webkit-animation: boat 6s infinite linear; /* Safari and Chrome */
 }
 
+#background-notif {
+  background: white;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
+}
+
+
 #bear-notif {
   width: 220px;
   height: 220px;
   background: transparent url('../images/notif-bear.png') center center no-repeat;
   position: fixed;
-  bottom: 10%;
+  top: 300px;
   margin-left: -110px;
   left: 50%;
   display: block;
@@ -413,9 +475,9 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   width: 1365px;
   overflow: hidden;
   z-index: 31;
-  height: 30000px;
+  height: 46000px;
   margin: 0 auto;
-  background: transparent url('../images/scenes4.jpg') 0 0 no-repeat fixed;
+  /*background: transparent url('../images/scenes4.jpg') 0 0 no-repeat fixed;*/
 }
 
 #scene-3-a, #scene-3-b,
@@ -426,30 +488,34 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
   position: relative
 }
 
-#scene-3-a-content, #scene-3-b-content,
-#scene-3-c-content
+#scene-3-1, #scene-3-2,
+#scene-3-3
  {
   width: 100%;
-  height: 10000px;
+  height: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1
 }
 
-#scene-3-a-content {
-  background: transparent url('../images/scenes3-a.jpg') 0 0 no-repeat fixed;
-  background-size: 100%
+#scene-3-1 {
+  background: transparent url('../images/scenes3-a.jpg') center center no-repeat;
+  /*background-size: 100%;*/
+  top: 0;
+  right: 0;
 }
 
-#scene-3-b-content {
-  background: transparent url('../images/scenes3-b.jpg') 0 0 no-repeat fixed;
-  background-size: 100%
+#scene-3-2{
+  background: transparent url('../images/scenes3-b.jpg') center 20px no-repeat;
+  /*background-size: 100%;*/
+  bottom: 0;
+  left: 0;
 }
 
-#scene-3-c-content {
-  background: transparent url('../images/scenes3-c.jpg') 0 0 no-repeat fixed;
-  background-size: 100%
+#scene-3-3 {
+  background: transparent url('../images/scenes3-c.jpg') center 20px no-repeat;
+  top: 0;
+  left: 0;
+  /*background-size: 100%*/
 }
 
 #nav-slider {
@@ -482,6 +548,7 @@ body, html {position: relative; width: 100%; height: 100%; -webkit-box-sizing: b
 .character {
   position: fixed;
   bottom: 15px;
+  z-index: 10;
 }
 
 #fox-scene {

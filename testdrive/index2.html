@@ -10,7 +10,7 @@
     <title>The Middleman</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|VT323|Boogaloo' rel='stylesheet' type='text/css'>
 
-    <link href="/stylesheets/style-alt.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/style-alt2.css" media="screen" rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -255,37 +255,37 @@
       //   return false;
       // });
 
-      $('.send-msg').smoothScroll({
-        speed: 11000
-      });
+      // $('.send-msg').smoothScroll({
+      //   speed: 11000
+      // });
 
-      $('.slide-nav').smoothScroll({
-        speed: 4000
-      });
+      // $('.slide-nav').smoothScroll({
+      //   speed: 4000
+      // });
 
-      $('#bear-notif').smoothScroll({
-        speed: 5000
-      });
+      // $('#bear-notif').smoothScroll({
+      //   speed: 5000
+      // });
 
-      $('.scroll').smoothScroll({
-        speed: 7000
-      });
+      // $('.scroll').smoothScroll({
+      //   speed: 7000
+      // });
 
-      $('.scroll2').smoothScroll({
-        speed: 14000
-      });
+      // $('.scroll2').smoothScroll({
+      //   speed: 14000
+      // });
 
-      $('.scroll3').smoothScroll({
-        speed: 4000
-      });
+      // $('.scroll3').smoothScroll({
+      //   speed: 4000
+      // });
 
-      $('.scroll4').smoothScroll({
-        speed: 5000
-      });
+      // $('.scroll4').smoothScroll({
+      //   speed: 5000
+      // });
 
-      $('.scroll5').smoothScroll({
-        speed: 3000
-      });
+      // $('.scroll5').smoothScroll({
+      //   speed: 3000
+      // });
 
       // $('.send-msg').on('click', function(){
       //   $('#popup-send').fadeOut("fast");
@@ -296,20 +296,16 @@
         $('#logo').fadeIn(3000);
       });
 
-      $('.info').on('mouseenter', function(){
-        var data = $(this).attr("data-info");
-        $('#infoReveal').html(data);
-      });
 
-      $('.info').on('mouseleave', function(){
-        var data = $(this).attr("data-info");
-        $('#infoReveal').html('');
-      })
 
       $('#tips a').on('click', function(){
         $("#tips").fadeOut();
         return false;
       });
+
+      $('.start').on('click', function(){
+        $(document).fullScreen(true);
+      })
 
       window.addEventListener('DOMContentLoaded', function() {
         $("body").queryLoader2({
@@ -320,6 +316,8 @@
           percentage: true
         });
       });
+
+
 
       // $('.panel').on('mouseenter', function(){
       //   $(this).css({opacity: 1});

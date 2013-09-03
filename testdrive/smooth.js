@@ -5,7 +5,6 @@
  * Licensed MIT (https://github.com/kswedberg/jquery-smooth-scroll/blob/master/LICENSE-MIT)
  */
 
-
 (function($) {
 
 var version = '1.4.11',
