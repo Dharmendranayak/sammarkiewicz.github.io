@@ -81,7 +81,9 @@ h1 {
   width: 350px;
   margin-left: -175px;
   left: 50%;
-  bottom: 5%; }
+  bottom: 5%;
+  -webkit-transition: opacity ease-in-out .4s;
+  transition: opacity ease-in-out .4s;}
 
 #m-link--connect-w-fb:hover {
   opacity: .7;
