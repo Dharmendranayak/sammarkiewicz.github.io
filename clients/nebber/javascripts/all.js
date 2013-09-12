@@ -455,9 +455,13 @@ $('#m-box--panel-2').parallax("bottom", 0.4, true);
 //   easing: 'sqrt'
 // });
 
-if(navigator.userAgent.match(/Android/i)){
-    window.scrollTo(0,1);
- }
+function hideAddressBar(){
+  if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio)
+    document.documentElement.style.height=(window.outerHeight/window.devicePixelRatio)+'px';
+  setTimeout(window.scrollTo(1,1),0);
+}
+window.addEventListener("load",function(){hideAddressBar();});
+window.addEventListener("orientationchange",function(){hideAddressBar();});
 
 $('.m-box--message').innerfade({
   speed: 'slow',
