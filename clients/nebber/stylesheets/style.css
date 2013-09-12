@@ -19,6 +19,8 @@ h1 {
   margin-left: -160px;
   left: 50%;
   -webkit-transition: width ease-in-out 0.2s;
+  -moz-transition: width ease-in-out 0.2s;
+  transition: width ease-in-out 0.2s;
   background-position: center center;
   background-repeat: no-repeat;
   top: 10%;
@@ -36,6 +38,8 @@ h1 {
   margin-left: -150px;
   left: 50%;
   -webkit-transition: width ease-in-out 0.2s;
+  -moz-transition: width ease-in-out 0.2s;
+  transition: width ease-in-out 0.2s;
   background-position: center center;
   background-repeat: no-repeat;
   top: 10%;
@@ -106,8 +110,11 @@ h1 {
   position: absolute;
   width: 350px;
   margin-left: -175px;
-  opacity: .85
+  opacity: .85;
   filter: alpha(opacity=85);
+  -webkit-transition: opacity ease-in-out 0.4s;
+  -moz-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
   left: 50%;
   bottom: 5%; }
 
