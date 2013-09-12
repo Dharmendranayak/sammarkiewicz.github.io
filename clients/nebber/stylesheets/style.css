@@ -259,6 +259,7 @@ h1 {
     width: 170px;
     height: 250px;
     text-indent: -999em;
+    background-size: 100%;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
@@ -312,6 +313,7 @@ h1 {
     width: 250px;
     height: 350px;
     text-indent: -999em;
+    background-size: 100%;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
@@ -331,6 +333,7 @@ h1 {
     width: 210px;
     height: 310px;
     text-indent: -999em;
+    background-size: 100%;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
@@ -351,6 +354,7 @@ h1 {
     margin-top: 0;
     width: 210px;
     height: 310px;
+    background-size: 100%;
     text-indent: -999em;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
