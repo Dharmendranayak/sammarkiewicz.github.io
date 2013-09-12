@@ -80,8 +80,7 @@ h1 {
   height: 100%;
   color: white;
   position: relative;
-  z-index: 1;
-  overflow: hidden; }
+  z-index: 1; }
 
 /* line 77, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-2 {
