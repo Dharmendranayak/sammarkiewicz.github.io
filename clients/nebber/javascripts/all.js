@@ -455,6 +455,10 @@ $('#m-box--panel-2').parallax("bottom", 0.4, true);
 //   easing: 'sqrt'
 // });
 
+if(navigator.userAgent.match(/Android/i)){
+    window.scrollTo(0,1);
+ }
+
 $('.m-box--message').innerfade({
   speed: 'slow',
   timeout: 4000,
