@@ -139,7 +139,7 @@ h1 {
     width: 300px;
     margin-left: -150px;
     left: 50%;
-    background-size: 100%; } }
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%; } }
 @media only screen and (max-height: 650px) {
   /* line 109, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   h1 {
@@ -152,7 +152,7 @@ h1 {
     width: 200px;
     margin-left: -100px;
     left: 50%;
-    background-size: 100%;
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     top: 5%;
     z-index: 3; }
 
@@ -191,7 +191,7 @@ h1 {
     width: 200px;
     margin-left: -100px;
     left: 50%;
-    background-size: 100%;
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     top: 2% !important; }
 
   /* line 132, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
@@ -205,7 +205,7 @@ h1 {
     width: 150px;
     margin-left: -75px;
     left: 50%;
-    background-size: 100%; }
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%; }
 
   /* line 136, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
@@ -232,7 +232,7 @@ h1 {
     width: 250px;
     margin-left: -125px;
     left: 50%;
-    background-size: 100%; } }
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%; } }
 @media only screen and (min-width: 321px) and (max-width: 568px) and (orientation: landscape) {
   /* line 151, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
@@ -259,7 +259,7 @@ h1 {
     width: 170px;
     height: 250px;
     text-indent: -999em;
-    background-size: 100%;
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
@@ -313,7 +313,7 @@ h1 {
     width: 250px;
     height: 350px;
     text-indent: -999em;
-    background-size: 100%;
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
@@ -333,9 +333,8 @@ h1 {
     width: 210px;
     height: 310px;
     text-indent: -999em;
-    background-size: 100%;
     display: block;
-    background: transparent url("../images/logo-thankyou-small.png"); }
+    background: transparent url("../images/logo-thankyou-small.png");-webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%; }
 
   /* line 214, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
@@ -354,7 +353,7 @@ h1 {
     margin-top: 0;
     width: 210px;
     height: 310px;
-    background-size: 100%;
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     text-indent: -999em;
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
