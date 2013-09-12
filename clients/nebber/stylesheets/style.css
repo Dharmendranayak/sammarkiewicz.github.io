@@ -284,16 +284,12 @@ h1 {
   /* line 182, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   h1 {
     top: 2%; }
-
-  /* line 184, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
-  .m-title--thanks {
-    color: red !important; } }
-@media only screen and (min-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) {
   /* line 188, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--header-thanks h1 {
     top: 0 !important;
     margin-top: 0 !important; } }
-@media only screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape) {
   /* line 193, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--header-thanks h1 {
     left: 10%;
@@ -313,7 +309,7 @@ h1 {
     width: 50% !important;
     margin-left: 0 !important;
     top: 40% !important; } }
-@media only screen and (min-width: 685px) and (max-height: 380px) and (orientation: landscape) {
+@media only screen and (min-device-width: 685px) and (max-device-height: 380px) and (orientation: landscape) {
   /* line 208, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--header-thanks h1 {
     left: 5%;
