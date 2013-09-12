@@ -152,6 +152,15 @@ h1 {
     top: 5%;
     z-index: 3; }
 
+    #m-box--header-thanks h1 {
+    top: 0 !important;
+    margin-top: 0 !important; }
+
+    .m-title--thanks {
+    top: 87% !important;
+    font-size: 1.6em !important
+    }
+
   /* line 116, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     top: 45%; } }
