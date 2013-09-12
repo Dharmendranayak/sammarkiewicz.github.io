@@ -322,6 +322,26 @@ h1 {
     width: 50% !important;
     margin-left: 0 !important;
     top: 40% !important; } }
+@media only screen and (min-width : 604px) and (orientation: landscape) {
+  #m-box--header-thanks h1 {
+    left: 5%;
+    margin-left: 0;
+    top: 0 !important;
+    margin-top: 0;
+    width: 210px;
+    height: 310px;
+    text-indent: -999em;
+    display: block;
+    background: transparent url("../images/logo-thankyou-small.png"); }
+
+  /* line 214, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
+  .m-title--thanks {
+    display: block;
+    left: 40% !important;
+    width: 50% !important;
+    margin-left: 0 !important;
+    top: 40% !important; } }
+}
 @media only screen and (min-device-width: 685px) and (max-device-height: 380px) and (orientation: landscape) {
   /* line 208, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   #m-box--header-thanks h1 {
