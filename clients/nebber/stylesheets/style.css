@@ -333,9 +333,9 @@ h1 {
     width: 250px;
     height: 350px;
     text-indent: -999em;
-    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;
     display: block;
-    background: transparent url("../images/logo-thankyou-small.png"); }
+    background: transparent url("../images/logo-thankyou-small.png");
+    -webkit-background-size: 100%; -moz-background-size: 100%; background-size: 100%;}
 
   /* line 214, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
@@ -343,7 +343,7 @@ h1 {
     left: 40% !important;
     width: 50% !important;
     margin-left: 0 !important;
-    top: 40% !important; } }
+    top: 40% !important; }
 }
 @media only screen and (min-device-width: 685px) and (max-device-height: 380px) and (orientation: landscape) {
   /* line 208, /Users/sammarkiewicz/nebber-landing/source/stylesheets/style.sass */
