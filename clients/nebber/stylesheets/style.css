@@ -276,7 +276,9 @@ h1#m-box--header-thanks {
 
   /* line 194, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h2 {
-    display: none; } }
+    display: none; }
+  .m-title--thanks {
+    display: block !important; } }
 @media only screen and (max-height: 380px) and (min-width: 684px) and (orientation: landscape) {
   /* line 198, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
@@ -390,6 +392,8 @@ h1#m-box--header-thanks {
   /* line 249, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     font-size: 1.4em; }
+  .m-title--thanks {
+    display: block !important; }
 
   /* line 251, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-link--connect-w-fb {
