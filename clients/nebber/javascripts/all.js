@@ -265,8 +265,8 @@ http://www.gnu.org/licenses/gpl.html
 		var getHeight;
 		var firstTop;
 		var paddingTop = 0;
-
-		//get the starting position of each element to have parallax applied to it
+		
+		//get the starting position of each element to have parallax applied to it		
 		$this.each(function(){
 		    firstTop = $this.offset().top;
 		});
@@ -280,15 +280,15 @@ http://www.gnu.org/licenses/gpl.html
 				return jqo.height();
 			};
 		}
-
+			
 		// setup defaults if arguments aren't specified
 		if (arguments.length < 1 || xpos === null) xpos = "50%";
 		if (arguments.length < 2 || speedFactor === null) speedFactor = 0.1;
 		if (arguments.length < 3 || outerHeight === null) outerHeight = true;
-
+		
 		// function to be called whenever the window is scrolled or resized
 		function update(){
-			var pos = $window.scrollTop();
+			var pos = $window.scrollTop();				
 
 			$this.each(function(){
 				var $element = $(this);
@@ -302,7 +302,7 @@ http://www.gnu.org/licenses/gpl.html
 
 				$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
 			});
-		}
+		}		
 
 		$window.bind('scroll', update).resize(update);
 		update();
@@ -325,21 +325,21 @@ http://www.gnu.org/licenses/gpl.html
 // and Ralf S. Engelschall http://trainofthoughts.org/
 
  *
- *  <ul id="news">
+ *  <ul id="news"> 
  *      <li>content 1</li>
  *      <li>content 2</li>
  *      <li>content 3</li>
  *  </ul>
- *
- *  $('#news').innerfade({
- *	  animationtype: Type of animation 'fade' or 'slide' (Default: 'fade'),
- *	  speed: Fading-/Sliding-Speed in milliseconds or keywords (slow, normal or fast) (Default: 'normal'),
- *	  timeout: Time between the fades in milliseconds (Default: '2000'),
- *	  type: Type of slideshow: 'sequence', 'random' or 'random_start' (Default: 'sequence'),
+ *  
+ *  $('#news').innerfade({ 
+ *	  animationtype: Type of animation 'fade' or 'slide' (Default: 'fade'), 
+ *	  speed: Fading-/Sliding-Speed in milliseconds or keywords (slow, normal or fast) (Default: 'normal'), 
+ *	  timeout: Time between the fades in milliseconds (Default: '2000'), 
+ *	  type: Type of slideshow: 'sequence', 'random' or 'random_start' (Default: 'sequence'), 
  * 		containerheight: Height of the containing element in any css-height-value (Default: 'auto'),
  *	  runningclass: CSS-Class which the container get’s applied (Default: 'innerfade'),
  *	  children: optional children selector (Default: null)
- *  });
+ *  }); 
  *
 
 // ========================================================= */
@@ -349,7 +349,7 @@ http://www.gnu.org/licenses/gpl.html
 (function($) {
 
     $.fn.innerfade = function(options) {
-        return this.each(function() {
+        return this.each(function() {   
             $.innerfade(this, options);
         });
     };
@@ -383,9 +383,9 @@ http://www.gnu.org/licenses/gpl.html
             } else if (settings.type == "random") {
             		var last = Math.floor ( Math.random () * ( elements.length ) );
                 setTimeout(function() {
-                    do {
+                    do { 
 												current = Math.floor ( Math.random ( ) * ( elements.length ) );
-										} while (last == current );
+										} while (last == current );             
 										$.innerfade.next(elements, settings, current, last);
                 }, settings.timeout);
                 $(elements[last]).show();
@@ -454,14 +454,6 @@ $('#m-box--panel-2').parallax("bottom", 0.4, true);
 //   forceHeight: false,
 //   easing: 'sqrt'
 // });
-
-function hideAddressBar(){
-  if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio)
-    document.documentElement.style.height=(window.outerHeight/window.devicePixelRatio)+'px';
-  setTimeout(window.scrollTo(1,1),0);
-}
-window.addEventListener("load",function(){hideAddressBar();});
-window.addEventListener("orientationchange",function(){hideAddressBar();});
 
 $('.m-box--message').innerfade({
   speed: 'slow',
