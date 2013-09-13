@@ -407,3 +407,42 @@ h1#m-box--header-thanks {
     margin-left: -125px;
     left: 50%;
     background-size: 100%; } }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+  h1#m-box--header-thanks {
+    width: 220px;
+    height: 425px;
+    text-indent: -999em;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    display: block;
+    background: transparent url("../images/logo-thankyou-small.png");
+    -webkit-transition: width ease-in-out 0.2s;
+    background-position: center -30px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 0; }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  h1#m-box--header-thanks {
+    width: 220px;
+    height: 425px;
+    text-indent: -999em;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    display: block;
+    background: transparent url("../images/logo-thankyou-small.png");
+    -webkit-transition: width ease-in-out 0.2s;
+    background-position: center -30px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 0; }
+}
+
