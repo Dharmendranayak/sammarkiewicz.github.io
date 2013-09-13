@@ -410,8 +410,9 @@ h1#m-box--header-thanks {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
   h1#m-box--header-thanks {
+    border: 1px solid red;
     width: 220px;
-    height: 425px;
+    height: 200px;
     text-indent: -999em;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -429,8 +430,9 @@ h1#m-box--header-thanks {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
   h1#m-box--header-thanks {
+    border: 1px solid red;
     width: 220px;
-    height: 425px;
+    height: 200px;
     text-indent: -999em;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
