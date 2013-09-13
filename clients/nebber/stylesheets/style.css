@@ -408,11 +408,10 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; } }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
   h1#m-box--header-thanks {
-    border: 1px solid red;
     width: 220px;
-    height: 200px;
+    height: 280px;
     text-indent: -999em;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -428,11 +427,10 @@ h1#m-box--header-thanks {
     top: 0; }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+@media only screen and (min-width : 320px) and (max-width : 568px) and (orientation : portrait) {
   h1#m-box--header-thanks {
-    border: 1px solid red;
     width: 220px;
-    height: 200px;
+    height: 280px;
     text-indent: -999em;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
