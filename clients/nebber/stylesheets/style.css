@@ -1,17 +1,14 @@
-/* line 18, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875em; }
 
-/* line 22, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 body, html {
   height: 100%; }
 
-/* line 25, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 html {
   background: white url(../images/final-screen-bg.png) top center no-repeat fixed; }
 
-/* line 28, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 h1#m-title--home {
   width: 320px;
   height: 320px;
@@ -30,33 +27,24 @@ h1#m-title--home {
   margin-top: 0;
   padding: 0; }
 
-/* line 39, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--header {
   height: 100%;
-  /* these styles are optional, to set width horizontally center the page */
   max-width: 500px;
   margin: 0 auto;
   position: fixed;
   z-index: 3; }
 
-/* line 47, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-2 {
-  /* set the height of the element which contains what you want to center */
   height: 100%;
-  /* these styles are optional, to set width horizontally center the page */
   margin: 0 auto; }
 
-/* line 53, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-2:before, .m-box--container {
-  /* these are the important styles for the centered element: */
   display: inline-block;
   vertical-align: middle; }
 
-/* line 58, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 .m-box--container {
   padding: 15% 0 0; }
 
-/* line 61, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 .m-box--container-ty {
   padding-top: 0 !important;
   width: 400px;
@@ -64,7 +52,6 @@ h1#m-title--home {
   left: 50%;
   margin-left: -200px; }
 
-/* line 68, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-2:before {
   /* this is the important part */
   content: "";
@@ -72,10 +59,8 @@ h1#m-title--home {
   width: 0;
   height: 100%;
   vertical-align: middle;
-  /* this just takes care of whitespace added by having display:inline-block (there are other methods) */
   margin-right: -4px; }
 
-/* line 78, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 h1#m-box--header-thanks {
   width: 300px;
   height: 425px;
@@ -90,12 +75,10 @@ h1#m-box--header-thanks {
   position: relative;
   top: 0; }
 
-/* line 89, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 .m-box--message span {
   width: 100%;
   text-align: center; }
 
-/* line 93, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-link--scrollTo {
   width: 90px;
   margin-left: -45px;
@@ -113,7 +96,6 @@ h1#m-box--header-thanks {
   z-index: 2;
   bottom: 5%; }
 
-/* line 111, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-1 {
   background: #f05949;
   height: 100%;
@@ -121,17 +103,14 @@ h1#m-box--header-thanks {
   position: relative;
   z-index: 1; }
 
-/* line 119, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #skrollr-body {
   width: 100%;
   height: 100%; }
 
-/* line 123, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-box--panel-2 {
   background: white url(../images/final-screen-bg.png) top center no-repeat fixed;
   height: 100%;
   position: relative; }
-  /* line 127, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2, #m-box--panel-2 .m-title--thanks {
     margin-top: 0;
     font-family: "Roboto", sans-serif;
@@ -142,11 +121,9 @@ h1#m-box--header-thanks {
     font-size: 2em;
     color: #444444;
     text-align: center; }
-  /* line 137, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 .m-title--thanks {
     bottom: 5%; }
 
-/* line 140, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
 #m-link--connect-w-fb {
   width: 350px;
   height: 185px;
@@ -171,7 +148,6 @@ h1#m-box--header-thanks {
 }
 
 @media only screen and (max-width: 800px) {
-  /* line 147, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-link--connect-w-fb {
     width: 300px;
     height: 155px;
@@ -184,15 +160,12 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; }
 
-  /* line 151, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-box--container {
     padding: 22% 0 0 !important; }
 
-  /* line 153, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-box--container-ty {
     padding-top: 0 !important; } }
 @media only screen and (max-height: 650px) {
-  /* line 157, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 250px;
     height: 250px;
@@ -207,19 +180,15 @@ h1#m-box--header-thanks {
     top: 5%;
     z-index: 3; }
 
-  /* line 163, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-box--container {
     padding: 8% 0 0; }
 
-  /* line 165, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-box--container-ty {
     padding-top: 0 !important; } }
 @media only screen and (max-width: 568px) {
-  /* line 169, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
     display: none; }
 
-  /* line 171, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 190px;
     height: 190px;
@@ -232,20 +201,16 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; }
 
-  /* line 175, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
     font-size: 1.5em !important;
-    width: 85% !important;
-    margin-left: -45% !important; }
-    /* line 179, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
+    width: 70% !important;
+    margin-left: -35% !important; }
     .m-title--thanks span {
       width: 100% !important; }
 
-  /* line 181, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     font-size: 1.4em; }
 
-  /* line 183, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-link--connect-w-fb {
     width: 250px;
     height: 125px;
@@ -258,11 +223,9 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; } }
 @media only screen and (min-width: 321px) and (max-width: 568px) and (orientation: landscape) {
-  /* line 189, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
     display: none; }
 
-  /* line 191, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 235px;
     height: 105px;
@@ -274,17 +237,14 @@ h1#m-box--header-thanks {
     margin-left: -117.5px;
     left: 50%; }
 
-  /* line 194, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h2 {
     display: none; }
-  .m-title--thanks {
+  .m-title--thanks
     display: block !important; } }
 @media only screen and (max-height: 380px) and (min-width: 684px) and (orientation: landscape) {
-  /* line 198, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
     display: none; }
 
-  /* line 200, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 235px;
     height: 105px;
@@ -296,15 +256,12 @@ h1#m-box--header-thanks {
     margin-left: -117.5px;
     left: 50%; } }
 @media only screen and (min-width: 768px) and (max-width: 1020px) and (orientation: landscape) {
-  /* line 205, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     top: 2%; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  /* line 209, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
     display: none; }
 
-  /* line 211, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 235px;
     height: 105px;
@@ -317,24 +274,19 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; }
 
-  /* line 215, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     display: none; }
 
-  /* line 217, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
     font-size: 1.5em !important;
     width: 90% !important;
     margin-left: -45% !important; }
-    /* line 221, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
     .m-title--thanks span {
       width: 100% !important; }
 
-  /* line 223, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     font-size: 1.4em; }
 
-  /* line 225, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-link--connect-w-fb {
     width: 250px;
     height: 125px;
@@ -347,7 +299,6 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; }
 
-  /* line 229, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--header-thanks {
     width: 200px;
     height: 325px;
@@ -355,15 +306,12 @@ h1#m-box--header-thanks {
     display: block;
     background: transparent url("../images/logo-thankyou-small.png"); }
 
-  /* line 231, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
     display: block !important; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  /* line 235, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-1 {
     display: none; }
 
-  /* line 237, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   h1#m-title--home {
     width: 235px;
     height: 105px;
@@ -376,26 +324,21 @@ h1#m-box--header-thanks {
     left: 50%;
     background-size: 100%; }
 
-  /* line 241, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     display: none; }
 
-  /* line 243, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   .m-title--thanks {
     font-size: 1.5em !important;
-    width: 90% !important;
-    margin-left: -45% !important; }
-    /* line 247, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
+    width: 70% !important;
+    margin-left: -35% !important; }
     .m-title--thanks span {
       width: 100% !important; }
 
-  /* line 249, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-box--panel-2 h2 {
     font-size: 1.4em; }
   .m-title--thanks {
     display: block !important; }
 
-  /* line 251, /Users/sammarkiewicz/Workspace/nebber-landing/source/stylesheets/style.sass */
   #m-link--connect-w-fb {
     width: 250px;
     height: 125px;
@@ -444,5 +387,22 @@ h1#m-box--header-thanks {
     margin: 0 auto;
     position: relative;
     top: 0; }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+  h1#m-title--home {
+    width: 180px;
+    height: 180px;
+    text-indent: -999em;
+    display: block;
+    background: transparent url("../images/logo.png");
+    position: fixed;
+    margin-left: -90px;
+    left: 50%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    top: 1%;
+    z-index: 3; }
 }
 
