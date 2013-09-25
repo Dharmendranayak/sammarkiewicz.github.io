@@ -200,7 +200,7 @@ h1 {
   -o-border-radius: 50%;
   border-radius: 50%;
   background: #66908c url("../images/transition-1.png") center center no-repeat;
-  z-index: 10;
+  z-index: 13;
   text-indent: -999em;
   display: block;
   margin-left: -350px;
@@ -343,9 +343,10 @@ h1 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 520px;
-  height: 300px; }
+  height: 300px;
+  z-index: 11; }
 
-/* line 78, ../sass/elements.sass */
+/* line 79, ../sass/elements.sass */
 .m-element--cloud6 {
   text-indent: -119988px;
   overflow: hidden;
@@ -357,49 +358,49 @@ h1 {
   height: 80px;
   z-index: 1; }
 
-/* line 84, ../sass/elements.sass */
+/* line 85, ../sass/elements.sass */
 [class*="m-element--panel"] {
   width: 33.33%;
   height: 670px;
   overflow: hidden; }
 
-/* line 89, ../sass/elements.sass */
+/* line 90, ../sass/elements.sass */
 .m-element--panelA {
   background: transparent url("../images/panel-a.jpg") top center no-repeat;
   left: 0;
   z-index: 3; }
 
-/* line 94, ../sass/elements.sass */
+/* line 95, ../sass/elements.sass */
 .m-element--panelB {
   background: transparent url("../images/panel-b.jpg") top center no-repeat;
   left: 33.33%;
   z-index: 3; }
 
-/* line 99, ../sass/elements.sass */
+/* line 100, ../sass/elements.sass */
 .m-element--panelC {
   background: transparent url("../images/panel-c.jpg") top center no-repeat;
   left: 66.66%;
   z-index: 3; }
 
-/* line 104, ../sass/elements.sass */
+/* line 105, ../sass/elements.sass */
 .m-element--panelA-blurred {
   background: transparent url("../images/panel-a-blurred.jpg") top center no-repeat;
   z-index: 4;
   left: 0; }
 
-/* line 109, ../sass/elements.sass */
+/* line 110, ../sass/elements.sass */
 .m-element--panelB-blurred {
   background: transparent url("../images/panel-b-blurred.jpg") top center no-repeat;
   z-index: 4;
   left: 33.33%; }
 
-/* line 114, ../sass/elements.sass */
+/* line 115, ../sass/elements.sass */
 .m-element--panelC-blurred {
   background: transparent url("../images/panel-c-blurred.jpg") top center no-repeat;
   z-index: 4;
   left: 66.66%; }
 
-/* line 119, ../sass/elements.sass */
+/* line 120, ../sass/elements.sass */
 .m-element--balloon {
   width: 111px;
   height: 204px;
@@ -410,12 +411,12 @@ h1 {
   -webkit-animation: balloon 30s infinite linear;
   -moz-animation: balloon 30s infinite linear;
   animation: balloon 30s infinite linear; }
-  /* line 129, ../sass/elements.sass */
+  /* line 130, ../sass/elements.sass */
   .m-element--balloon.blurred {
     background: transparent url("../images/balloon-blurred.png") top center no-repeat;
     z-index: 4; }
 
-/* line 133, ../sass/elements.sass */
+/* line 134, ../sass/elements.sass */
 .m-element--wave {
   width: 1000px;
   position: absolute;
@@ -427,12 +428,12 @@ h1 {
   -moz-animation: wave 5s infinite linear;
   animation: wave 5s;
   z-index: 4; }
-  /* line 144, ../sass/elements.sass */
+  /* line 145, ../sass/elements.sass */
   .m-element--wave.blurred {
     background: transparent url("../images/wave-blurred.png") top center no-repeat;
     z-index: 5; }
 
-/* line 148, ../sass/elements.sass */
+/* line 149, ../sass/elements.sass */
 .m-element--boat {
   width: 614px;
   height: 409px;
@@ -444,12 +445,12 @@ h1 {
   -webkit-animation: boat 6s infinite linear;
   -moz-animation: boat 6s infinite linear;
   animation: boat 6s infinite linear; }
-  /* line 159, ../sass/elements.sass */
+  /* line 160, ../sass/elements.sass */
   .m-element--boat.blurred {
     background: transparent url("../images/boat-blurred.png") top center no-repeat;
     z-index: 4; }
 
-/* line 163, ../sass/elements.sass */
+/* line 164, ../sass/elements.sass */
 .m-element--fox {
   text-indent: -119988px;
   overflow: hidden;
@@ -461,7 +462,7 @@ h1 {
   height: 314px;
   position: absolute;
   z-index: 3; }
-  /* line 167, ../sass/elements.sass */
+  /* line 168, ../sass/elements.sass */
   .m-element--fox.blurred {
     text-indent: -119988px;
     overflow: hidden;
@@ -473,7 +474,7 @@ h1 {
     height: 314px;
     z-index: 4; }
 
-/* line 171, ../sass/elements.sass */
+/* line 172, ../sass/elements.sass */
 .m-element--moose {
   text-indent: -119988px;
   overflow: hidden;
@@ -485,7 +486,7 @@ h1 {
   height: 446px;
   position: absolute;
   z-index: 3; }
-  /* line 175, ../sass/elements.sass */
+  /* line 176, ../sass/elements.sass */
   .m-element--moose.blurred {
     text-indent: -119988px;
     overflow: hidden;
@@ -498,7 +499,7 @@ h1 {
     z-index: 4;
     width: 301px; }
 
-/* line 180, ../sass/elements.sass */
+/* line 181, ../sass/elements.sass */
 .m-element--bear-large {
   text-indent: -119988px;
   overflow: hidden;
@@ -511,7 +512,16 @@ h1 {
   right: 5%;
   z-index: 10; }
 
-/* line 185, ../sass/elements.sass */
+/* line 186, ../sass/elements.sass */
+.m-box--elements-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin-left: -500px;
+  left: 50%;
+  overflow: hidden; }
+
+/* line 193, ../sass/elements.sass */
 .m-element--bear-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -522,9 +532,10 @@ h1 {
   width: 240px;
   height: 434px;
   top: 350px;
-  z-index: 10; }
+  z-index: 10;
+  position: absolute !important; }
 
-/* line 190, ../sass/elements.sass */
+/* line 199, ../sass/elements.sass */
 .m-element--fox-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -534,9 +545,10 @@ h1 {
   background-position: 50% 50%;
   width: 157px;
   height: 247px;
-  top: 530px; }
+  top: 530px;
+  position: absolute !important; }
 
-/* line 193, ../sass/elements.sass */
+/* line 203, ../sass/elements.sass */
 .m-element--racoon-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -546,9 +558,10 @@ h1 {
   background-position: 50% 50%;
   width: 192px;
   height: 236px;
-  top: 540px; }
+  top: 540px;
+  position: absolute !important; }
 
-/* line 196, ../sass/elements.sass */
+/* line 207, ../sass/elements.sass */
 .m-element--flamingo-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -558,9 +571,10 @@ h1 {
   background-position: 50% 50%;
   width: 163px;
   height: 531px;
-  top: 250px; }
+  top: 250px;
+  position: absolute !important; }
 
-/* line 200, ../sass/elements.sass */
+/* line 212, ../sass/elements.sass */
 .m-element--elephant-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -570,9 +584,10 @@ h1 {
   background-position: 50% 50%;
   width: 267px;
   height: 438px;
-  top: 350px; }
+  top: 350px;
+  position: absolute !important; }
 
-/* line 204, ../sass/elements.sass */
+/* line 217, ../sass/elements.sass */
 .m-element--panda-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -582,9 +597,10 @@ h1 {
   background-position: 50% 50%;
   width: 245px;
   height: 419px;
-  top: 350px; }
+  top: 350px;
+  position: absolute !important; }
 
-/* line 208, ../sass/elements.sass */
+/* line 222, ../sass/elements.sass */
 .m-element--moose-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -594,9 +610,10 @@ h1 {
   background-position: 50% 50%;
   width: 276px;
   height: 438px;
-  top: 340px; }
+  top: 340px;
+  position: absolute !important; }
 
-/* line 212, ../sass/elements.sass */
+/* line 227, ../sass/elements.sass */
 .m-element--lion-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -606,9 +623,10 @@ h1 {
   background-position: 50% 50%;
   width: 207px;
   height: 394px;
-  top: 385px; }
+  top: 385px;
+  position: absolute !important; }
 
-/* line 216, ../sass/elements.sass */
+/* line 232, ../sass/elements.sass */
 .m-element--donkey-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -618,9 +636,10 @@ h1 {
   background-position: 50% 50%;
   width: 207px;
   height: 440px;
-  top: 250px; }
+  top: 250px;
+  position: absolute !important; }
 
-/* line 220, ../sass/elements.sass */
+/* line 237, ../sass/elements.sass */
 .m-element--table-scene {
   text-indent: -119988px;
   overflow: hidden;
@@ -632,21 +651,23 @@ h1 {
   height: 308px;
   margin-left: -442px;
   left: 50%;
-  z-index: 11; }
+  z-index: 11;
+  position: absolute !important; }
 
-/* line 228, ../sass/elements.sass */
+/* line 246, ../sass/elements.sass */
 [class*="txt-box"] {
   font-family: "Boogaloo", cursive;
   font-size: 1.75em;
   line-height: 1.42857em;
-  width: 450px; }
+  width: 450px;
+  z-index: 12; }
 
-/* line 233, ../sass/elements.sass */
+/* line 252, ../sass/elements.sass */
 [class*="m-bubble"] {
   font-family: "Boogaloo", cursive;
   color: #8a8a7b;
-  font-size: 1.75em;
-  line-height: 1.42857em;
+  font-size: 1.4375em;
+  line-height: 1.73913em;
   line-height: 1.1em;
   width: 80%;
   position: absolute;
@@ -664,7 +685,7 @@ h1 {
   background-size: 100%;
   z-index: 10; }
 
-/* line 248, ../sass/elements.sass */
+/* line 267, ../sass/elements.sass */
 .txt-box--scene2 {
   left: 10%;
   z-index: 15;
@@ -679,40 +700,54 @@ h1 {
   text-align: center;
   color: #8a8a7b; }
 
-/* line 259, ../sass/elements.sass */
+/* line 278, ../sass/elements.sass */
 .m-bubble--fox {
   top: 10%; }
-  /* line 261, ../sass/elements.sass */
+  /* line 280, ../sass/elements.sass */
   .m-bubble--fox p {
     padding-top: 20%; }
 
-/* line 264, ../sass/elements.sass */
+/* line 283, ../sass/elements.sass */
 .m-bubble--lion {
   top: 2%; }
-  /* line 266, ../sass/elements.sass */
+  /* line 285, ../sass/elements.sass */
   .m-bubble--lion p {
     padding-top: 20%; }
 
-/* line 269, ../sass/elements.sass */
+/* line 288, ../sass/elements.sass */
 .m-bubble--moose {
   top: 7%; }
-  /* line 271, ../sass/elements.sass */
+  /* line 290, ../sass/elements.sass */
   .m-bubble--moose p {
     padding-top: 20%; }
 
-/* line 274, ../sass/elements.sass */
-.txt-box--scene1 {
+/* line 293, ../sass/elements.sass */
+.txt-box--scene1, .txt-box--scene4 {
   color: white;
   right: 5%; }
 
-/* line 278, ../sass/elements.sass */
+/* line 297, ../sass/elements.sass */
+.txt-box--scene4 {
+  width: 300px; }
+
+/* line 300, ../sass/elements.sass */
 .txt-box--scene3 {
   color: white;
   margin-left: -225px;
   left: 50%;
   text-align: center; }
 
-/* line 285, ../sass/elements.sass */
+/* line 305, ../sass/elements.sass */
+.m-box--elements.connect-with-facebook {
+  width: 200px;
+  margin-left: -100px;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center; }
+
+/* line 314, ../sass/elements.sass */
 .m-list--main-nav {
   position: fixed;
   z-index: 20;
@@ -728,12 +763,12 @@ h1 {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   border-radius: 25px; }
-  /* line 295, ../sass/elements.sass */
+  /* line 324, ../sass/elements.sass */
   .m-list--main-nav li {
     display: inline-block;
     float: left;
     margin: 0 4px; }
-  /* line 299, ../sass/elements.sass */
+  /* line 328, ../sass/elements.sass */
   .m-list--main-nav a {
     width: 15px;
     height: 15px;
@@ -1080,3 +1115,80 @@ h1 {
     -moz-transform-origin: rotate(0deg);
     -o-transform-origin: rotate(0deg);
     transform-origin: rotate(0deg); } }
+
+@media only screen and (max-width: 800px) {
+  /* line 2, ../sass/responsive.sass */
+  .responsive {
+    display: none !important; }
+
+  /* line 5, ../sass/responsive.sass */
+  body {
+    border: 15px solid #efefef;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 9, ../sass/responsive.sass */
+  .isResponsive {
+    display: block !important;
+    text-align: center;
+    padding: 5% 15% 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    /* line 14, ../sass/responsive.sass */
+    .isResponsive p {
+      margin: 0 0 0.75em;
+      line-height: 1.5em;
+      font-size: 1.5em;
+      color: #444444;
+      font-family: "Boogaloo", cursive; }
+      /* line 20, ../sass/responsive.sass */
+      .isResponsive p a {
+        margin: 2.5em 0 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.75em; } }
+@media only screen and (max-width: 568px) {
+  /* line 27, ../sass/responsive.sass */
+  .responsive {
+    display: none !important; }
+
+  /* line 30, ../sass/responsive.sass */
+  body {
+    border: 5px solid #efefef;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 34, ../sass/responsive.sass */
+  .isResponsive {
+    display: block !important;
+    text-align: center;
+    padding: 5% 15% 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    /* line 39, ../sass/responsive.sass */
+    .isResponsive img {
+      width: 100px;
+      margin: 0 auto; }
+    /* line 42, ../sass/responsive.sass */
+    .isResponsive p {
+      margin: 0 0 0.75em;
+      line-height: 1.25em;
+      font-size: 1em;
+      color: #444444;
+      font-family: "Boogaloo", cursive; }
+      /* line 48, ../sass/responsive.sass */
+      .isResponsive p a {
+        margin: 2.5em 0 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.75em; } }
+/* line 53, ../sass/responsive.sass */
+.connect-with-facebook {
+  background: #3b5998;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.65em 0.75em;
+  margin: 1em 0 0; }

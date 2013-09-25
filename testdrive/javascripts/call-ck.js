@@ -1,2 +1,2 @@
 // Initialize Skrollr
-skrollr.init({forceHeight:!1,easing:"sqrt"});$(".m-list--main-nav a").smoothScroll({speed:1e3});$(document).scroll(function(){console.log($(document).scrollTop())});
+skrollr.init({forceHeight:!1,easing:"sqrt"});$(".m-list--main-nav a").smoothScroll({speed:1e3});window.addEventListener("DOMContentLoaded",function(){$("body").queryLoader2({backgroundColor:"#fff",barColor:"#222",barHeight:2,completeAnimation:"fade",percentage:!0})});
