@@ -11,6 +11,10 @@ $('.m-list--main-nav a').smoothScroll({
   speed: 1000
 });
 
+var loadBalloon = $('<div class="m-element--ballon-load" />')
+
+$('#qLoverlay').append(loadBalloon)
+
 window.addEventListener('DOMContentLoaded', function() {
   $("body").queryLoader2({
     backgroundColor: "#fff",

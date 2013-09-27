@@ -120,7 +120,7 @@
             height: 0,
             overflow: "hidden"
         });
-        
+
         for (var i = 0; qLbgimages.length > i; i++) {
             $.ajax({
                 url: qLbgimages[i],
@@ -131,7 +131,7 @@
                     }
                 }
             });
-        }        	
+        }
 
     };
 
@@ -179,10 +179,10 @@
             qLparent.css("position", "relative");
         }
 
-        qLoverlay = $("<div id='"+qLoptions.overlayId+"'></div>").css({
+        qLoverlay = $("<div id='"+qLoptions.overlayId+"'><div class='m-element--ballon-load'/></div>").css({
             width: "100%",
             height: "100%",
-            backgroundColor: qLoptions.backgroundColor,
+
             backgroundPosition: "fixed",
             position: overlayPosition,
             zIndex: 666999,
@@ -192,7 +192,6 @@
         qLbar = $("<div id='qLbar'></div>").css({
             height: qLoptions.barHeight + "px",
             marginTop: "-" + (qLoptions.barHeight / 2) + "px",
-            backgroundColor: qLoptions.barColor,
             width: "0%",
             position: "absolute",
             top: "50%"
