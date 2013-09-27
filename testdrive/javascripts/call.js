@@ -7,7 +7,7 @@ skrollr.init({
 
 // Initialize smoothscroll
 
-$('.m-list--main-nav a').smoothScroll({
+$('.m-list--main-nav a','.m-link--scrollTo').smoothScroll({
   speed: 1000
 });
 
