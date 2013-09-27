@@ -822,7 +822,7 @@ h1 {
   font-family: "Boogaloo", cursive;
   font-size: 1.75em;
   line-height: 1.42857em;
-  color: white !important;
+  color: #444444 !important;
   margin-top: 1em !important; }
 
 /* line 374, ../sass/elements.sass */
