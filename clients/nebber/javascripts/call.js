@@ -7,9 +7,14 @@ skrollr.init({
 
 // Initialize smoothscroll
 
-$('.m-list--main-nav a','.m-link--scrollTo').smoothScroll({
+$('.m-list--main-nav a').smoothScroll({
   speed: 1000
 });
+
+$('.m-link--scrollTo').smoothScroll({
+  speed: 1000
+});
+
 
 var loadBalloon = $('<div class="m-element--ballon-load" />')
 
