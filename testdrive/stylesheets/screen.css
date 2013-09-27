@@ -664,17 +664,17 @@ h1 {
 /* line 251, ../sass/elements.sass */
 [class*="txt-box"] {
   font-family: "Boogaloo", cursive;
-  font-size: 1.75em;
-  line-height: 1.42857em;
-  width: 450px;
+  font-size: 2em;
+  line-height: 1.25em;
+  width: 500px;
   z-index: 12; }
 
 /* line 257, ../sass/elements.sass */
 [class*="m-bubble"] {
   font-family: "Boogaloo", cursive;
   color: #8a8a7b;
-  font-size: 1.4375em;
-  line-height: 1.73913em;
+  font-size: 1.625em;
+  line-height: 1.53846em;
   line-height: 1.1em;
   width: 80%;
   position: absolute;
@@ -701,7 +701,7 @@ h1 {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  width: 400px;
+  width: 450px;
   min-height: 350px;
   line-height: 250px;
   text-align: center;
