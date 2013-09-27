@@ -1,21 +1,26 @@
+// Initialize Skrollr
 
-$('#m-link--scrollTo').smoothScroll({
-  easing: 'swing',
-  speed: 1200
+skrollr.init({
+  forceHeight: false,
+  easing: 'sqrt'
 });
 
-$('#m-box--panel-1').parallax("bottom", 0.1, true);
-$('#m-box--panel-2').parallax("bottom", 0.4, true);
+// Initialize smoothscroll
 
-// skrollr.init({
-//   forceHeight: false,
-//   easing: 'sqrt'
-// });
-
-$('.m-box--message').innerfade({
-  speed: 'slow',
-  timeout: 4000,
-  type: 'random',
-  containerheight: '50px'
+$('.m-list--main-nav a','.m-link--scrollTo').smoothScroll({
+  speed: 1000
 });
 
+var loadBalloon = $('<div class="m-element--ballon-load" />')
+
+$('#qLoverlay').append(loadBalloon)
+
+window.addEventListener('DOMContentLoaded', function() {
+  $("body").queryLoader2({
+    backgroundColor: "#fff",
+    barColor: "#222",
+    barHeight: 2,
+    completeAnimation: "fade",
+    percentage: true
+  });
+});
