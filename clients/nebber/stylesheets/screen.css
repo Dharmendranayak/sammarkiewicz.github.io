@@ -181,7 +181,7 @@ h1 {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/scroll.gif?1380732136');
+  background-image: url('../images/scroll.gif?1380732413');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 200px;
@@ -1305,6 +1305,90 @@ h1 {
     -moz-transform-origin: rotate(0deg);
     -o-transform-origin: rotate(0deg);
     transform-origin: rotate(0deg); } }
+
+/* line 314, ../sass/animations.sass */
+.animated2 {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s; }
+  /* line 325, ../sass/animations.sass */
+  .animated2.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s; }
+
+@-webkit-keyframes pulse {
+  /* line 333, ../sass/animations.sass */
+  0% {
+    -webkit-transform: scale(1); }
+
+  /* line 335, ../sass/animations.sass */
+  50% {
+    -webkit-transform: scale(1.1); }
+
+  /* line 337, ../sass/animations.sass */
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  /* line 342, ../sass/animations.sass */
+  0% {
+    -moz-transform: scale(1); }
+
+  /* line 344, ../sass/animations.sass */
+  50% {
+    -moz-transform: scale(1.1); }
+
+  /* line 346, ../sass/animations.sass */
+  100% {
+    -moz-transform: scale(1); } }
+
+@-o-keyframes pulse {
+  /* line 351, ../sass/animations.sass */
+  0% {
+    -o-transform: scale(1); }
+
+  /* line 353, ../sass/animations.sass */
+  50% {
+    -o-transform: scale(1.1); }
+
+  /* line 355, ../sass/animations.sass */
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes pulse {
+  /* line 360, ../sass/animations.sass */
+  0% {
+    transform: scale(1); }
+
+  /* line 362, ../sass/animations.sass */
+  50% {
+    transform: scale(1.1); }
+
+  /* line 364, ../sass/animations.sass */
+  100% {
+    transform: scale(1); } }
+
+/* line 368, ../sass/animations.sass */
+.pulse {
+  z-index: 1000;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 800px) {
   /* line 2, ../sass/responsive.sass */
