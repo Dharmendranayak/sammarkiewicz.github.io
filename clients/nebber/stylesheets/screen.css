@@ -841,18 +841,26 @@ h1 {
     bottom: 7px;
     right: 10px;
     font-size: 0.75em;
-    background: #ff9124; }
+    text-indent: -999em;
+    padding-right: 1.8em;
+    padding-left: 1.8em;
+    display: block;
+    background: #ff9124 url("../images/nebber-mini-logo.png") center center no-repeat; }
+    /* line 383, ../sass/elements.sass */
+    .m-list--main-nav-container .connect-with-facebook:hover {
+      opacity: 0.7;
+      filter: alpha(opacity=70); }
 
-/* line 381, ../sass/elements.sass */
+/* line 388, ../sass/elements.sass */
 #qLoverlay {
   background: white url("../images/scene-transit.jpg") 0 0 no-repeat fixed !important;
   z-index: 1000 !important; }
 
-/* line 385, ../sass/elements.sass */
+/* line 392, ../sass/elements.sass */
 #qLbar {
   display: none; }
 
-/* line 388, ../sass/elements.sass */
+/* line 395, ../sass/elements.sass */
 #qLpercentage {
   font-family: "Boogaloo", cursive;
   font-size: 1.75em;
@@ -860,11 +868,11 @@ h1 {
   color: #444444 !important;
   margin-top: 1em !important; }
 
-/* line 394, ../sass/elements.sass */
+/* line 401, ../sass/elements.sass */
 .isResponsive {
   display: none; }
 
-/* line 397, ../sass/elements.sass */
+/* line 404, ../sass/elements.sass */
 .m-box--overlay {
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
