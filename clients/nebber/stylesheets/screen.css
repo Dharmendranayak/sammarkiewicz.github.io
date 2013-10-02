@@ -143,7 +143,7 @@ body, html {
 
 /* line 28, ../sass/scenes.sass */
 #m-box--scene-10 {
-  height: 2500px; }
+  height: 3500px; }
 
 /* line 1, ../sass/elements.sass */
 .m-box--elements {
@@ -1321,18 +1321,18 @@ h1 {
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s; }
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  animation-duration: 4s; }
   /* line 325, ../sass/animations.sass */
   .animated2.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s; }
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    -o-animation-duration: 4s;
+    animation-duration: 4s; }
 
 @-webkit-keyframes pulse {
   /* line 333, ../sass/animations.sass */
