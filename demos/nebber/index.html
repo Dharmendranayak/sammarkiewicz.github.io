@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Block demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {margin: 0; padding: 0;}
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .m-box--display {
+      width: 200px;
+      padding: 2px;
+      background: #efefef;
+      border: 1px solid #ccc;
+      min-height: 300px;
+      margin: 0 5px 5px 0;
+      float: left;
+      display: inline-block;
+      zoom: 1;
+      *display: inline
+    }
+    .m-box--display img {
+      width: 200px;
+    }
+    .clear {clear: both;}
+  @media only screen and (min-width : 320px) and (max-width : 568px) {
+      body {
+        border: 5px solid #444;
+      }
+      .m-box--display {
+        width: 43%;
+        margin: 2.5%
+      }
+      .m-box--display img {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    .m-box--display {
+        width: 43%;
+        margin: 2.5%
+      }
+      .m-box--display img {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .m-box--display {
+        width: 30%;
+        margin: 1%
+      }
+      .m-box--display img {
+      width: 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div class="m-box--display"><img src="images/test.jpg" alt=""><p>Test</p></div>
+  <div class="m-box--display"><img src="images/test.jpg" alt=""><p>Test</p></div>
+  <div class="m-box--display"><img src="images/test.jpg" alt=""><p>Test</p></div>
+  <div class="m-box--display"><img src="images/test.jpg" alt=""><p>Test</p></div>
+  <div class="m-box--display"><img src="images/test.jpg" alt=""><p>Test</p></div>
+  <div class="clear"></div>
+</body>
+</html>
