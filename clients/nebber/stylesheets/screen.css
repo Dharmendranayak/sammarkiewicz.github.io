@@ -1321,18 +1321,18 @@ h1 {
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  -ms-animation-duration: 4s;
-  -o-animation-duration: 4s;
-  animation-duration: 4s; }
+  -webkit-animation-duration: 7s;
+  -moz-animation-duration: 7s;
+  -ms-animation-duration: 7s;
+  -o-animation-duration: 7s;
+  animation-duration: 7s; }
   /* line 325, ../sass/animations.sass */
   .animated2.hinge {
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 4s;
-    -ms-animation-duration: 4s;
-    -o-animation-duration: 4s;
-    animation-duration: 4s; }
+    -webkit-animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    -ms-animation-duration: 7s;
+    -o-animation-duration: 7s;
+    animation-duration: 7s; }
 
 @-webkit-keyframes pulse {
   /* line 333, ../sass/animations.sass */
