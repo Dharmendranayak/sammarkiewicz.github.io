@@ -752,17 +752,32 @@ h1 {
   right: 5%; }
 
 /* line 311, ../sass/elements.sass */
+.txt-box--intro {
+  text-align: center !important;
+  margin-right: -250px;
+  right: 50%;
+  top: 38%;
+  color: #8a8a7b; }
+  /* line 317, ../sass/elements.sass */
+  .txt-box--intro i {
+    padding: 0 0.5em 0 0;
+    display: inline-block; }
+  /* line 320, ../sass/elements.sass */
+  .txt-box--intro a {
+    font-size: 0.85em !important; }
+
+/* line 323, ../sass/elements.sass */
 .txt-box--scene4 {
   width: 400px; }
 
-/* line 314, ../sass/elements.sass */
+/* line 326, ../sass/elements.sass */
 .txt-box--scene3 {
   color: white;
   margin-left: -250px;
   left: 50%;
   text-align: center; }
 
-/* line 319, ../sass/elements.sass */
+/* line 331, ../sass/elements.sass */
 .m-box--elements.connect-with-facebook {
   width: 200px;
   margin-left: -100px;
@@ -770,21 +785,27 @@ h1 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.6em;
+  padding: 0.35em 0.65em;
+  font-family: "Boogaloo", cursive; }
+  /* line 339, ../sass/elements.sass */
+  .m-box--elements.connect-with-facebook i {
+    padding: 0 0.5em 0 0; }
 
-/* line 328, ../sass/elements.sass */
+/* line 345, ../sass/elements.sass */
 .m-list--main-nav {
   position: absolute;
   margin-left: -115px;
   left: 50%;
   padding: 0.75em 0.65em 0;
   width: 230px; }
-  /* line 333, ../sass/elements.sass */
+  /* line 350, ../sass/elements.sass */
   .m-list--main-nav li {
     display: inline-block;
     float: left;
     margin: 0 4px; }
-  /* line 337, ../sass/elements.sass */
+  /* line 354, ../sass/elements.sass */
   .m-list--main-nav a {
     width: 15px;
     height: 15px;
@@ -798,7 +819,7 @@ h1 {
     float: left;
     background: #6e645c; }
 
-/* line 346, ../sass/elements.sass */
+/* line 363, ../sass/elements.sass */
 .m-box--share {
   width: 250px;
   margin-left: -125px;
@@ -806,14 +827,14 @@ h1 {
   text-align: center;
   line-height: 30px;
   z-index: 200; }
-  /* line 352, ../sass/elements.sass */
+  /* line 369, ../sass/elements.sass */
   .m-box--share .twitter-share-button {
     position: relative;
     top: 3px;
     width: 57px !important;
     float: left;
     margin: 0 20px 0 57px; }
-  /* line 358, ../sass/elements.sass */
+  /* line 375, ../sass/elements.sass */
   .m-box--share .like {
     text-indent: -119988px;
     overflow: hidden;
@@ -826,7 +847,7 @@ h1 {
     display: block;
     float: left; }
 
-/* line 365, ../sass/elements.sass */
+/* line 380, ../sass/elements.sass */
 .m-list--main-nav-container {
   position: fixed;
   z-index: 20;
@@ -835,32 +856,35 @@ h1 {
   width: 100%;
   left: 0;
   height: 40px; }
-  /* line 373, ../sass/elements.sass */
+  /* line 388, ../sass/elements.sass */
   .m-list--main-nav-container .connect-with-facebook {
     position: absolute;
-    bottom: 7px;
+    bottom: 2px;
     right: 10px;
-    font-size: 0.75em;
-    text-indent: -999em;
+    font-size: 1em;
     padding-right: 1.8em;
-    padding-left: 1.8em;
+    padding-left: 1.4em;
     display: block;
-    background: #ff9124 url("../images/nebber-mini-logo.png") center center no-repeat; }
-    /* line 383, ../sass/elements.sass */
+    background: #3b5998;
+    font-family: "Boogaloo", cursive !important; }
+    /* line 398, ../sass/elements.sass */
+    .m-list--main-nav-container .connect-with-facebook i {
+      padding: 0 0.5em 0 0; }
+    /* line 400, ../sass/elements.sass */
     .m-list--main-nav-container .connect-with-facebook:hover {
       opacity: 0.7;
       filter: alpha(opacity=70); }
 
-/* line 388, ../sass/elements.sass */
+/* line 405, ../sass/elements.sass */
 #qLoverlay {
   background: white url("../images/scene-transit.jpg") 0 0 no-repeat fixed !important;
   z-index: 1000 !important; }
 
-/* line 392, ../sass/elements.sass */
+/* line 409, ../sass/elements.sass */
 #qLbar {
   display: none; }
 
-/* line 395, ../sass/elements.sass */
+/* line 412, ../sass/elements.sass */
 #qLpercentage {
   font-family: "Boogaloo", cursive;
   font-size: 1.75em;
@@ -868,11 +892,11 @@ h1 {
   color: #444444 !important;
   margin-top: 1em !important; }
 
-/* line 401, ../sass/elements.sass */
+/* line 418, ../sass/elements.sass */
 .isResponsive {
   display: none; }
 
-/* line 404, ../sass/elements.sass */
+/* line 421, ../sass/elements.sass */
 .m-box--overlay {
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
