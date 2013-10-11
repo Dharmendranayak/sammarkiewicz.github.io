@@ -1521,16 +1521,29 @@ h1 {
       font-size: 1.5em;
       color: #444444;
       font-family: "Boogaloo", cursive; }
-      /* line 21, ../sass/responsive.sass */
-      .isResponsive p a {
-        margin: 2.5em 0 0;
-        font-size: 0.85em; } }
+    /* line 21, ../sass/responsive.sass */
+    .isResponsive a.connect-with-facebook {
+      margin: 1em 0 0;
+      font-size: 0.85em;
+      width: 150px;
+      height: 35px;
+      line-height: 35px;
+      text-indent: 25px; }
+    /* line 28, ../sass/responsive.sass */
+    .isResponsive .like, .isResponsive .tweet {
+      font-size: 1.2em;
+      width: 40px;
+      height: 40px;
+      line-height: 40px; }
+    /* line 33, ../sass/responsive.sass */
+    .isResponsive .tweet {
+      margin-left: 70px; } }
 @media only screen and (max-width: 568px) {
-  /* line 27, ../sass/responsive.sass */
+  /* line 38, ../sass/responsive.sass */
   .responsive {
     display: none !important; }
 
-  /* line 30, ../sass/responsive.sass */
+  /* line 41, ../sass/responsive.sass */
   body {
     border: 5px solid #efefef;
     -webkit-box-sizing: border-box;
@@ -1538,7 +1551,7 @@ h1 {
     box-sizing: border-box;
     background: transparent url("../images/scene-first.jpg") top center no-repeat fixed; }
 
-  /* line 35, ../sass/responsive.sass */
+  /* line 46, ../sass/responsive.sass */
   .isResponsive {
     display: block !important;
     text-align: center;
@@ -1546,22 +1559,35 @@ h1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    /* line 40, ../sass/responsive.sass */
+    /* line 51, ../sass/responsive.sass */
     .isResponsive img {
       width: 100px;
       margin: 0 auto; }
-    /* line 43, ../sass/responsive.sass */
+    /* line 54, ../sass/responsive.sass */
     .isResponsive p {
       margin: 0 0 0.75em;
       line-height: 1.25em;
       font-size: 1em;
       color: #444444;
       font-family: "Boogaloo", cursive; }
-      /* line 49, ../sass/responsive.sass */
-      .isResponsive p a {
-        margin: 2.5em 0 0;
-        font-size: 0.85em; } }
-/* line 53, ../sass/responsive.sass */
+    /* line 60, ../sass/responsive.sass */
+    .isResponsive a.connect-with-facebook {
+      margin: 1em 0 0;
+      font-size: 0.85em;
+      width: 150px;
+      height: 35px;
+      line-height: 35px;
+      text-indent: 25px; }
+    /* line 67, ../sass/responsive.sass */
+    .isResponsive .like, .isResponsive .tweet {
+      font-size: 1.2em;
+      width: 40px;
+      height: 40px;
+      line-height: 40px; }
+    /* line 72, ../sass/responsive.sass */
+    .isResponsive .tweet {
+      margin-left: 70px; } }
+/* line 75, ../sass/responsive.sass */
 .connect-with-facebook {
   background: #3b5998;
   color: white;
