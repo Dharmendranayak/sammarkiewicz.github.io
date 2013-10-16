@@ -583,7 +583,7 @@ h1 {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/flamingo.png?1380543060');
+  background-image: url('../images/flamingo.png?1381511834');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 163px;
@@ -959,6 +959,57 @@ h1 {
   -moz-background-size: 65%;
   -o-background-size: 65%;
   background-size: 65%; }
+
+/* line 482, ../sass/elements.sass */
+.m-box--thank-you {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent url("../images/thank-you.png") center center no-repeat fixed; }
+/* line 487, ../sass/elements.sass */
+.m-box--thank-you div:first-child {
+  font-family: "Boogaloo", cursive;
+  font-size: 1.75em;
+  line-height: 1.42857em;
+  color: #444444 !important;
+  width: 320px;
+  text-align: center;
+  height: 380px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  margin-left: -160px; }
+/* line 500, ../sass/elements.sass */
+.m-box--thank-you p {
+  margin: 0 0 0.85em; }
+/* line 502, ../sass/elements.sass */
+.m-box--thank-you .like {
+  background: #8b9dc3; }
+/* line 504, ../sass/elements.sass */
+.m-box--thank-you .tweet {
+  position: relative;
+  float: left;
+  margin: 0 30px 0 90px;
+  background: #00aced; }
+/* line 509, ../sass/elements.sass */
+.m-box--thank-you .like, .m-box--thank-you .tweet {
+  float: left;
+  text-decoration: none;
+  font-size: 1.2em;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 !important;
+  display: block !important;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
 
 /* line 1, ../sass/animations.sass */
 .animated {
@@ -1494,6 +1545,10 @@ h1 {
     background: transparent url("../images/scene-first.jpg") top center no-repeat fixed; }
 
   /* line 10, ../sass/responsive.sass */
+  body.thanks {
+    background: white !important; }
+
+  /* line 13, ../sass/responsive.sass */
   .isResponsive {
     display: block !important;
     text-align: center;
@@ -1501,14 +1556,14 @@ h1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  /* line 15, ../sass/responsive.sass */
+  /* line 18, ../sass/responsive.sass */
   .isResponsive p {
     margin: 0 0 0.75em;
     line-height: 1.5em;
     font-size: 1.5em;
     color: #e3772e;
     font-family: "Boogaloo", cursive; }
-  /* line 21, ../sass/responsive.sass */
+  /* line 24, ../sass/responsive.sass */
   .isResponsive a.connect-with-facebook {
     margin: 1em 0 0;
     font-size: 0.85em;
@@ -1516,21 +1571,21 @@ h1 {
     height: 35px;
     line-height: 35px;
     text-indent: 25px; }
-  /* line 28, ../sass/responsive.sass */
+  /* line 31, ../sass/responsive.sass */
   .isResponsive .like, .isResponsive .tweet {
     font-size: 1.2em;
     width: 40px;
     height: 40px;
     line-height: 40px; }
-  /* line 33, ../sass/responsive.sass */
+  /* line 36, ../sass/responsive.sass */
   .isResponsive .tweet {
     margin-left: 70px; } }
 @media only screen and (max-width: 568px) {
-  /* line 38, ../sass/responsive.sass */
+  /* line 41, ../sass/responsive.sass */
   .responsive {
     display: none !important; }
 
-  /* line 41, ../sass/responsive.sass */
+  /* line 44, ../sass/responsive.sass */
   body {
     border: 5px solid #efefef;
     -webkit-box-sizing: border-box;
@@ -1538,7 +1593,34 @@ h1 {
     box-sizing: border-box;
     background: transparent url("../images/scene-first.jpg") top center no-repeat fixed; }
 
-  /* line 46, ../sass/responsive.sass */
+  /* line 48, ../sass/responsive.sass */
+  body.thanks {
+    background: white !important; }
+
+  /* line 50, ../sass/responsive.sass */
+  .m-box--thank-you {
+    -webkit-background-size: 210%;
+    -moz-background-size: 210%;
+    -o-background-size: 210%;
+    background-size: 210%;
+    background-position: top center !important; }
+  /* line 53, ../sass/responsive.sass */
+  .m-box--thank-you div {
+    width: 40% !important;
+    height: auto !important;
+    padding: 2%;
+    font-size: 0.8em !important;
+    margin-left: -24% !important; }
+  /* line 59, ../sass/responsive.sass */
+  .m-box--thank-you div a {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important; }
+  /* line 63, ../sass/responsive.sass */
+  .m-box--thank-you div .tweet {
+    margin: 0 20px 0 15px !important; }
+
+  /* line 65, ../sass/responsive.sass */
   .isResponsive {
     display: block !important;
     text-align: center;
@@ -1548,18 +1630,18 @@ h1 {
     box-sizing: border-box;
     position: relative;
     z-index: 100; }
-  /* line 53, ../sass/responsive.sass */
+  /* line 72, ../sass/responsive.sass */
   .isResponsive img {
     width: 100px;
     margin: 0 auto; }
-  /* line 56, ../sass/responsive.sass */
+  /* line 75, ../sass/responsive.sass */
   .isResponsive p {
     margin: 0 0 0.75em;
     line-height: 1.25em;
     font-size: 1em;
     color: #e3772e;
     font-family: "Boogaloo", cursive; }
-  /* line 62, ../sass/responsive.sass */
+  /* line 81, ../sass/responsive.sass */
   .isResponsive a.connect-with-facebook {
     margin: 1em 0 0;
     font-size: 0.85em;
@@ -1567,16 +1649,52 @@ h1 {
     height: 35px;
     line-height: 35px;
     text-indent: 25px; }
-  /* line 69, ../sass/responsive.sass */
+  /* line 88, ../sass/responsive.sass */
   .isResponsive .like, .isResponsive .tweet {
     font-size: 1.2em;
     width: 40px;
     height: 40px;
     line-height: 40px; }
-  /* line 74, ../sass/responsive.sass */
+  /* line 93, ../sass/responsive.sass */
   .isResponsive .tweet {
     margin-left: 70px; } }
-/* line 77, ../sass/responsive.sass */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 97, ../sass/responsive.sass */
+  body {
+    border: 5px solid #efefef;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent url("../images/scene-first.jpg") center -100px no-repeat fixed;
+    -webkit-background-size: 400%;
+    -moz-background-size: 400%;
+    -o-background-size: 400%;
+    background-size: 400%; }
+
+  /* line 102, ../sass/responsive.sass */
+  body.thanks {
+    background: white !important; }
+
+  /* line 104, ../sass/responsive.sass */
+  .m-box--share {
+    margin-top: 20px; }
+
+  /* line 106, ../sass/responsive.sass */
+  a.connect-with-facebook {
+    margin-top: 5px !important;
+    font-size: 0.65em;
+    height: 30px !important;
+    line-height: 30px !important; }
+
+  /* line 111, ../sass/responsive.sass */
+  i {
+    height: 26px !important;
+    line-height: 26px !important; }
+
+  /* line 114, ../sass/responsive.sass */
+  p {
+    top: 20% !important; } }
+/* line 117, ../sass/responsive.sass */
 .connect-with-facebook {
   background: #3b5998;
   color: white;
