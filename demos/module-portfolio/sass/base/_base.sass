@@ -1,0 +1,71 @@
+@import compass/reset
+@import compass/typography
+@import compass/css3
+@import compass/utilities
+
+@import susy
+
+// 1 - Variables
+// 1a - Colours
+
+$asphalt  : #34495e
+$cloud    : #ecf0f1
+$white    : white
+$turquoise : #1abc9c
+$greensea  : #16a085
+
+// 1b - Colours usage
+
+$bgBody   : $white
+$bgHtml   : $asphalt
+$bgHeader : $turquoise
+$bgNav    : $greensea
+
+$siteTitle : $white
+$workTitle : $turquoise
+
+$avatar : $cloud
+
+// Mixins
+
+@mixin circle($value, $color)
+  width: $value
+  height: $value
+  display: block
+  +border-radius(50%)
+  background: ($color)
+  border-color: darken($color, 5%)
+
+// Grid settings
+
+$total-columns  : 12            // a 12-column grid
+$column-width   : 61px           // each column is 4em wide
+$gutter-width   : 20px           // 1em gutters between columns
+$grid-padding   : 0
+
+
+// Typographic rules
+
+$base-font-size: 16px
+$base-line-height: 24px
++establish-baseline
+
+body
+  font-family: 'Lato', sans-serif
+  -webkit-font-smoothing: antialiased
+
+h1
+  font-family: 'Lily Script One', cursive
+  +adjust-font-size-to(40px)
+h2
+  font-family: 'Lily Script One', cursive
+  +adjust-font-size-to(30px)
+  color: $workTitle
+  text-align: center
+  margin: .6em 0 .1em
+
+h3
+  font-family: 'Lily Script One', cursive
+  +adjust-font-size-to(22px)
+  color: #ccc
+

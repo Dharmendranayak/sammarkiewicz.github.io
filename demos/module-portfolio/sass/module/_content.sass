@@ -1,0 +1,61 @@
+.m-box--work-container
+  border-bottom: 1px solid #ccc
+  &.showPanel
+    -webkit-animation-name: showPanel
+    animation-name: showPanel
+    -webkit-animation-duration: .5s
+    animation-duration: .5s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+  &.hidePanel
+    -webkit-animation-name: hidePanel
+    animation-name: hidePanel
+    -webkit-animation-duration: .5s
+    animation-duration: .5s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+
+
+@-webkit-keyframes showPanel
+  0%
+    min-height: 0
+    opacity: 0
+    margin-bottom: 0
+
+  100%
+    min-height: 600px
+    opacity: 1
+    margin-bottom: 1em
+
+@keyframes showPanel
+  0%
+    min-height: 0
+    opacity: 0
+    margin-bottom: 0
+
+  100%
+    min-height: 600px
+    opacity: 1
+    margin-bottom: 1em
+
+@-webkit-keyframes hidePanel
+  0%
+    min-height: 600px
+    opacity: 1
+    margin-bottom: 1em
+
+  100%
+    min-height: 0px
+    opacity: 0
+    margin-bottom: 0
+
+@keyframes hidePanel
+  0%
+    min-height: 600px
+    opacity: 1
+    margin-bottom: 1em
+
+  100%
+    min-height: 0
+    opacity: 0
+    margin-bottom: 0

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "lettering",
+    "title": "Lettering",
+    "thumbUrl": "images/lettering/thumb.jpg"
+  },
+  {
+    "id": "webdesign",
+    "title": "Webdesign",
+    "thumbUrl": "images/webdesign/thumb.jpg"
+  },
+  {
+    "id": "icons",
+    "title": "Icons",
+    "thumbUrl": "images/icons/thumb.jpg"
+  }
+]

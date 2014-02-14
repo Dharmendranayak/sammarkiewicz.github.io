@@ -1,0 +1,10 @@
+<div class="m-bow--work-details">
+  <h2>{{ work.title }}</h2>
+  <p>{{ work.description }}</p>
+  <ul class="m-box--work-img">
+    <li ng-repeat="images in work.images">
+      <img src="{{images}}">
+    </li>
+  </ul>
+  <a href="#" id="close">X</a>
+</div>

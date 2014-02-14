@@ -1,0 +1,54 @@
+html
+  background: $bgHtml
+  padding: 3em 0 0
+
+body
+  +container
+  // padding: 0
+  border-color: lighten($bgHeader, 2%)
+  border-width: 10px
+  border-style: solid
+  background: $white
+  margin: 0 auto
+
+header
+  padding: 2em 0
+  text-align: center
+
+nav
+  padding: 0 1em
+  background: $bgNav
+  li
+    +span-columns(4, 12)
+    +box-sizing(border-box)
+    &:nth-child(3n)
+      +omega
+  img
+    width: 100%
+
+.m-bow--work-details
+  padding: 0 1em
+  position: relative
+  #close
+    position: absolute
+    +circle(30px, $avatar)
+    text-align: center
+    line-height: 30px
+    font-weight: bold
+    top: 10px
+    right: 10px
+    color: #999
+    text-decoration: none
+  p
+    margin: 0 0 1.8em
+    color: #666
+    padding: 0 4em
+    text-align: center
+
+.m-box--work-img
+  li
+    +span-columns(6, 12)
+    &:nth-child(2n)
+      +omega
+  img
+    width: 100%
