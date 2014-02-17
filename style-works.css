@@ -1,0 +1,107 @@
+body {font-size: .9em; font-family: 'Lato', sans-serif; font-weight: 300}
+strong {font-weight: 500}
+a:hover {text-decoration: none}
+header {
+  color: #8a8a8a;
+  text-align: center;
+  padding: 3em 0 5em;
+}
+  header h1 {width: 95px; height: 91px; text-indent: -999em; display: block; margin: 0 auto; background: transparent url('images/logo.png') center center no-repeat;}
+    header h1 span {
+      font-size: .5em;
+      text-transform: none;
+      font-weight: 500;
+      display: block
+    }
+  header p {
+    margin: 1.5em 0 0;
+    font-size: 1.2em
+  }
+
+.m-box--work {
+  width: 100%;
+  padding: 3em 0
+}
+  .m-box--work article {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative
+  }
+  .m-box--work h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 0 0 .5em;
+    margin: 0 0 1em;
+    border-left: 3px solid white;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+  }
+  .m-box--work ol {
+    padding-top: 6em;
+    padding-left: 20em;
+  }
+    .m-box--work ol > li {
+      margin: 0 0 3em;
+      padding: 3em 0 0 1.5em;
+      border-top: 1px solid white;
+    }
+  .m-box--work h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 .5em;
+    color: white;
+  }
+    .m-box--work h3 + p {
+
+    }
+  .m-box--work ol p,
+  .m-box--work ul {
+    margin: 0 0 .75em;
+  }
+  .m-box--work ol p {
+    line-height: 1.4em
+  }
+  .m-box--work ul li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-style: italic
+  }
+    .m-box--work ul li:after {
+      content: ',';
+    }
+    .m-box--work ul li:last-child:after {
+      content: ' ';
+    }
+  .m-box--work a {
+    color: inherit
+  }
+.m-title--intro {
+  font-size: 2em;
+  font-style: italic;
+  padding-left: 10em;
+  padding-top: 2em;
+  /*padding-left: .8em*/
+}
+
+.m-box--websites {
+  background: #3da3a2;
+  color: white;
+}
+  .m-box--websites p,
+  .m-box--websites li {
+    color: #9ad7d6;
+  }
+
+.m-box--plugins {
+  background: #eb713b
+}
+  .m-box--plugins p,
+  .m-box--plugins li {
+    color: #fae2be;
+  }
